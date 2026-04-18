@@ -12,6 +12,7 @@ local MKPT_Item = {}
 MKPT_env.MKPT_Item = MKPT_Item
 
 local Utils = MKPT_env.Utils
+local L = MKPT_env.L
 local idIdx = {}
 local questIdIdx = {}
 local spellIdIdx = {}
@@ -146,7 +147,7 @@ function MKPT_Item:ToggleTrack()
     C_SuperTrack.SetSuperTrackedUserWaypoint(true)
     local _, isTomTomLoaded = C_AddOns.IsAddOnLoaded("TomTom")
     if isTomTomLoaded and TomTom then
-      local itemName = self:GetName() or "Item not cached"
+      local itemName = self:GetName() or L["Item not cached"]
       self.tomtomUid = TomTom:AddWaypoint(wp.map, wp.x, wp.y, { title = itemName, persistent = false, source = "MKPT_WA" })
     end
   end
@@ -171,7 +172,7 @@ end
 
 function MKPT_Item:GetDescription()
   if not self.waypoint then
-    return self.text or "Location unknown"
+    return self.text or L["Location unknown"]
   end
 
   local requirementsText = self.text and self.text.."\n\n" or ""
@@ -182,7 +183,7 @@ function MKPT_Item:GetDescription()
     requirementsText = requirementsText.."\n"
   end
 
-  local name = self:GetName() or "Not loaded yet"
+  local name = self:GetName() or L["Not loaded yet"]
   local mapInfo = C_Map.GetMapInfo(self.waypoint.map)
   return requirementsText..string.format("%s\n%s - x:%.2f y:%.2f", name, mapInfo.name, self.waypoint.x * 100, self.waypoint.y * 100)
 end
@@ -224,7 +225,7 @@ function MKPT_CatchUp:GetDescription()
   end
 
   if self.requirements then
-    local lockedText = self:MeetRequirements() and "\nUnlocked\n" or "\nFinish to unlock:\n"
+    local lockedText = self:MeetRequirements() and ("\n" .. L["Unlocked"] .. "\n") or ("\n" .. L["Finish to unlock:"] .. "\n")
     requirementsText = requirementsText..lockedText
     for _, v in ipairs(self.requirements) do
       requirementsText = requirementsText..v:GetDescription().."\n"
@@ -244,7 +245,7 @@ end
 
 function MKPT_PatronCatchUp:GetDescription()
   local requirementsText = self.text and self.text.."\n" or ""
-  return requirementsText..CreateSimpleTextureMarkup(4914670, 16, 16).." ~24 hours - "..CreateSimpleTextureMarkup(5976939, 16, 16).." ~84 hours"
+  return requirementsText..CreateSimpleTextureMarkup(4914670, 16, 16).." "..L["~24 hours"].." - "..CreateSimpleTextureMarkup(5976939, 16, 16).." "..L["~84 hours"]
 end
 
 local MKPT_DarkmoonQuest = MKPT_Item:New()
@@ -380,7 +381,7 @@ function MKPT_WeeklyTreasure:GetDescription()
   else
     zoneName = C_Map.GetMapInfo(2537).name -- Quel'Thalas
   end
-  return Utils.WEEKLY_TREASURE_ICON.." Found on treasures around "..zoneName
+  return Utils.WEEKLY_TREASURE_ICON..L[" Found on treasures around "]..zoneName
 end
 
 local MKPT_WeeklyQuestItem = MKPT_Item:New()
@@ -418,7 +419,7 @@ end
 function MKPT_Treatise:GetDescription()
   local itemDescription = MKPT_Item.GetDescription(self)
 
-  return Utils.TREATISE_ICON.." Inscription work order".."\n"..itemDescription
+  return Utils.TREATISE_ICON.." "..L["Inscription work order"].."\n"..itemDescription
 end
 
 local MKPT_FirstTimeRecipe = MKPT_env.MKPT_Item:New()

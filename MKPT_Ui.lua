@@ -1,6 +1,7 @@
 local AddonName, MKPT_env, _ = ...
 
 local Utils = MKPT_env.Utils
+local L = MKPT_env.L
 
 local f = CreateFrame("Frame", "MKPT_Frame", UIParent, "BackdropTemplate")
 MKPT_env.ui = f
@@ -66,7 +67,7 @@ function MKPT_env.CreateUI()
     UIFrameFadeIn(f.closeButton, 0.1, f.closeButton:GetAlpha(), 1)
 
     GameTooltip:SetOwner(self, "ANCHOR_TOP")
-    GameTooltip:SetText("Auto hide")
+    GameTooltip:SetText(L["Auto hide"])
     GameTooltip:Show()
   end)
   f.hideButton:SetScript("OnLeave", function(self)
@@ -97,7 +98,7 @@ function MKPT_env.CreateUI()
     UIFrameFadeIn(f.hideButton, 0.1, f.hideButton:GetAlpha(), 1)
     UIFrameFadeIn(f.closeButton, 0.1, f.closeButton:GetAlpha(), 1)
     GameTooltip:SetOwner(self, "ANCHOR_TOP")
-    GameTooltip:SetText("Close")
+    GameTooltip:SetText(L["Close"])
     GameTooltip:Show()
   end)
   f.closeButton:SetScript("OnLeave", function(self)

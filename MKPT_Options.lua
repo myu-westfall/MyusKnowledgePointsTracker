@@ -1,10 +1,10 @@
 local AddonName, MKPT_env, _ = ...
-
+local L = MKPT_env.L
 
 function MKPT_env.InitializeOptionsMenu()
     local db = MKPT_env.db
     -- Create and register the main category for your addon in the Interface Options
-    local category = Settings.RegisterVerticalLayoutCategory("Myu's kp Tracker")
+    local category = Settings.RegisterVerticalLayoutCategory(L["Myu's kp Tracker"])
     MKPT_env.categoryId = category:GetID()
     do
         local GetValue = function()
@@ -13,7 +13,7 @@ function MKPT_env.InitializeOptionsMenu()
         local SetValue = function(value)
             MKPT_env.SetLockUi(value)
         end
-        local name = "Lock Window"
+        local name = L["Lock Window"]
         local defaultValue = false
         local setting = Settings.RegisterProxySetting(
             category,
@@ -24,7 +24,7 @@ function MKPT_env.InitializeOptionsMenu()
             GetValue,
             SetValue
         )
-        local tooltip = "Locks window position"
+        local tooltip = L["Locks window position"]
         Settings.CreateCheckbox(category, setting, tooltip)
     end
 
@@ -35,7 +35,7 @@ function MKPT_env.InitializeOptionsMenu()
         local SetValue = function(value)
             MKPT_env.ToggleAutoHide()
         end
-        local name = "Autohide"
+        local name = L["Autohide"]
         local defaultValue = false
         local setting = Settings.RegisterProxySetting(
             category,
@@ -46,7 +46,7 @@ function MKPT_env.InitializeOptionsMenu()
             GetValue,
             SetValue
         )
-        local tooltip = "Hides the window when the cursor is not over it"
+        local tooltip = L["Hides the window when the cursor is not over it"]
         Settings.CreateCheckbox(category, setting, tooltip)
     end
 
@@ -66,7 +66,7 @@ function MKPT_env.InitializeOptionsMenu()
                 MKPT_env.ui:Show()
             end
         end
-        local name = "Hide in combat"
+        local name = L["Hide in combat"]
         local defaultValue = false
         local setting = Settings.RegisterProxySetting(
             category,
@@ -77,7 +77,7 @@ function MKPT_env.InitializeOptionsMenu()
             GetValue,
             SetValue
         )
-        local tooltip = "Hides the window when in combat"
+        local tooltip = L["Hides the window when in combat"]
         Settings.CreateCheckbox(category, setting, tooltip)
     end
 
@@ -89,7 +89,7 @@ function MKPT_env.InitializeOptionsMenu()
         local SetValue = function(value)
             MKPT_env.ToggleMinimapIcon()
         end
-        local name = "Minimap icon"
+        local name = L["Minimap icon"]
         local defaultValue = true
         local setting = Settings.RegisterProxySetting(
             category,
@@ -100,7 +100,7 @@ function MKPT_env.InitializeOptionsMenu()
             GetValue,
             SetValue
         )
-        local tooltip = "Show/hide minimap icon"
+        local tooltip = L["Show/hide minimap icon"]
         Settings.CreateCheckbox(category, setting, tooltip)
     end
 
@@ -111,7 +111,7 @@ function MKPT_env.InitializeOptionsMenu()
         local SetValue = function(value)
             MKPT_env.ToggleCompartmentIcon()
         end
-        local name = "Show in addon compartment"
+        local name = L["Show in addon compartment"]
         local defaultValue = true
         local setting = Settings.RegisterProxySetting(
             category,
@@ -122,14 +122,14 @@ function MKPT_env.InitializeOptionsMenu()
             GetValue,
             SetValue
         )
-        local tooltip = "Show/hide addon compartment entry"
+        local tooltip = L["Show/hide addon compartment entry"]
         Settings.CreateCheckbox(category, setting, tooltip)
     end
 
     do
         local variableName = "MKPT_BackgroundOpacity"
-        local name = "Background Opacity"
-        local tooltip = "Changes background opacity"
+        local name = L["Background Opacity"]
+        local tooltip = L["Changes background opacity"]
         local defaultValue = 0.6
         local minValue = 0.0
         local maxValue = 1.0
@@ -163,8 +163,8 @@ function MKPT_env.InitializeOptionsMenu()
 
     do
         local variableName = "MKPT_RowBackgroundOpacity"
-        local name = "Row Background Opacity"
-        local tooltip = "Changes row background opacity"
+        local name = L["Row Background Opacity"]
+        local tooltip = L["Changes row background opacity"]
         local defaultValue = 0.5
         local minValue = 0.0
         local maxValue = 1.0
@@ -197,8 +197,8 @@ function MKPT_env.InitializeOptionsMenu()
 
     do
         local variableName = "MKPT_UiScale"
-        local name = "UI scale"
-        local tooltip = "Resizes the addon window"
+        local name = L["UI scale"]
+        local tooltip = L["Resizes the addon window"]
         local defaultValue = 1.0
         local minValue = 0.5
         local maxValue = 1.5
