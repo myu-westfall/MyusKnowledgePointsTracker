@@ -4,6 +4,11 @@ local _, MKPT_env, _ = ...
 local MKPT_Currency = {}
 
 MKPT_env.MKPT_Currency = MKPT_Currency
+local trackedCurrencies = {}
+
+function MKPT_env.IsTrackedCurrency(currencyId)
+    return trackedCurrencies[currencyId]
+end
 
 ---@class MKPT_Currency
 ---@field id number - Currency Id
@@ -14,6 +19,8 @@ function MKPT_Currency:New(currencyId)
     setmetatable(currency, self)
     self.__index = self
     currency.id = currencyId
+
+    trackedCurrencies[currencyId] = true
 
     local info = C_CurrencyInfo.GetCurrencyInfo(currencyId)
     currency.name = info.name
