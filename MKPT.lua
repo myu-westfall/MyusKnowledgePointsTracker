@@ -68,16 +68,11 @@ function EventHandler.SKILL_LINES_CHANGED()
 end
 
 function EventHandler.CURRENCY_DISPLAY_UPDATE(currencyId, ...)
-  if currencyId == 3376 then
+  if MKPT_env.IsTrackedCurrency(currencyId) or MKPT_env.MKPT_Profession.FindProfessionByCatchUpCurrencyId(currencyId) then
     local f = MKPT_env.ui
     f:RenderTree()
+    MKPT_env.RefreshTrackedItem()
   end
-  local profession = MKPT_env.MKPT_Profession.FindProfessionByCatchUpCurrencyId(currencyId)
-  if profession then
-    local f = MKPT_env.ui
-    f:RenderTree()
-  end
-  MKPT_env.RefreshTrackedItem()
 end
 
 function EventHandler.BAG_UPDATE_DELAYED()
