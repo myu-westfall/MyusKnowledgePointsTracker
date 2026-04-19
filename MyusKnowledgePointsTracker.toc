@@ -29,6 +29,7 @@
 libs\load_libs.xml
 Locales\Core.lua
 Locales\zhCN.lua
+Locales\ptBR.lua
 Utils.lua
 MKPT_Item.lua
 MKPT_Profession.lua
