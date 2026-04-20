@@ -10,7 +10,13 @@
 ## X-Wago-ID: nGv78DNx
 ## IconTexture: Interface\AddOns\MyusKnowledgePointsTracker\Textures\MKPT_Icon
 
+## Title-zhCN: Myu的知识点追踪
+## Category-zhCN: 专业
+## Notes-zhCN: 追踪专业知识点获取详情
+
 libs\load_libs.xml
+Locales\Core.lua
+Locales\zhCN.lua
 Utils.lua
 MKPT_Item.lua
 MKPT_Profession.lua
