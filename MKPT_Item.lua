@@ -382,7 +382,7 @@ function MKPT_WeeklyTreasure:GetDescription()
   else
     zoneName = C_Map.GetMapInfo(2537).name -- Quel'Thalas
   end
-  return Utils.WEEKLY_TREASURE_ICON..L[" Found on treasures around "]..zoneName
+  return Utils.WEEKLY_TREASURE_ICON .. " " .. string.format(L["Found on treasures around %s"], zoneName)
 end
 
 local MKPT_WeeklyQuestItem = MKPT_Item:New()

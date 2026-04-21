@@ -59,9 +59,9 @@ L["Location unknown"] = "Localização desconhecida"
 L["Not loaded yet"] = "Ainda não carregado"
 L["Unlocked"] = "Desbloqueado"
 L["Finish to unlock:"] = "Conclua para desbloquear:"
-L["~24 hours"] = "Aproximadamente 24 horas"
-L["~84 hours"] = "Aproximadamente 84 horas"
-L[" Found on treasures around "] = " Encontrado em tesouros em "
+L["~24 hours"] = "Aproximadamente a cada 24 horas"
+L["~84 hours"] = "Aproximadamente a cada 84 horas"
+L["Found on treasures around %s"] = "Encontrado em tesouros em %s"
 L["Inscription work order"] = "Ordem de trabalho de Escrivania"
 
 -- Init.lua
