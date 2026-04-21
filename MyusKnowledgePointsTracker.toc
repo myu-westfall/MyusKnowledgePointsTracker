@@ -4,6 +4,7 @@
 ## Title-zhCN: Myu的知识点追踪
 
 ## Notes: Tracks acquisition of knowledge points for professions
+## Notes-ptBR: Rastreia os pontos de conhecimento das profissões
 ## Notes-zhCN: 追踪专业知识点获取详情
 
 ## Author: Myu
