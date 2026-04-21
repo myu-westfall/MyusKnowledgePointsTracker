@@ -48,6 +48,13 @@ L["command not found."] = "未找到该命令。"
 
 -- MKPT_Ui.lua
 L["Auto hide"] = "自动隐藏"
+L["No professions found"] = "未找到专业"
+L["Click on an item to track"] = "点击条目以追踪"
+L["Weekly"] = "周常"
+L["Unique"] = "限定"
+L["Missing"] = "缺失"
+L["W:"] = "周:"
+L["U:"] = "限:"
 
 -- MKPT_MinimapIcon.lua
 L["Myu's Knowledge Points Tracker"] = "Myu的知识点追踪"
@@ -61,7 +68,7 @@ L["Unlocked"] = "已解锁"
 L["Finish to unlock:"] = "完成以下条件以解锁："
 L["~24 hours"] = "约24小时"
 L["~84 hours"] = "约84小时"
-L[" Found on treasures around "] = " 在以下地图的宝藏中找到："
+L["Found on treasures around %s"] = "在%s的宝藏中发现"
 L["Inscription work order"] = "铭文制作订单"
 
 -- Init.lua

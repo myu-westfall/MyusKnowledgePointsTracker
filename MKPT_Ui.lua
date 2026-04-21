@@ -153,11 +153,11 @@ function MKPT_env.CreateUI()
 
   if firstTimeLoaded then
     f:UpdateDetail(
-      "Click on an item to track\n" ..
-      Utils.WeeklyTextColor("Weekly") .. " - " ..
-      Utils.CatchUpTextColor("Catch-Up") .. " - " ..
-      Utils.UniqueTextColor("Unique") .. " - " ..
-      Utils.MissingTextColor("Missing")
+      L["Click on an item to track"] .. "\n" ..
+      Utils.WeeklyTextColor(L["Weekly"]) .. " - " ..
+      Utils.CatchUpTextColor(L["Catch-Up"]) .. " - " ..
+      Utils.UniqueTextColor(L["Unique"]) .. " - " ..
+      Utils.MissingTextColor(L["Missing"])
     )
     charDb.firstTimeLoaded = false
   end
@@ -265,12 +265,12 @@ local function AddProfessionButton(profession)
   b.background:SetVertexColor(backgroundColor.r, backgroundColor.g, backgroundColor.b, backgroundColor.a)
 
   local remaining = profession:CalculateRemainingKps()
-  b.leftText:SetText(Utils.WeeklyTextColor("W:" .. remaining.weekly) .. Utils.CatchUpTextColor(" +" .. remaining.catchUp))
+  b.leftText:SetText(Utils.WeeklyTextColor(L["W:"] .. remaining.weekly) .. Utils.CatchUpTextColor(" +" .. remaining.catchUp))
 
   local missing = profession:CalculateSpendableKps()
   local unallocated = profession:GetUnallocatedKps()
   local rightText = unallocated > 0 and Utils.UnspentKpsTextColor(unallocated) or Utils.MissingTextColor(missing)
-  b.rightText:SetText(Utils.UniqueTextColor("U:" .. remaining.unique) .. " " .. rightText)
+  b.rightText:SetText(Utils.UniqueTextColor(L["U:"] .. remaining.unique) .. " " .. rightText)
 
   local middleText = profession.name
   local skillLevel = profession:GetSkillLevel()
@@ -465,7 +465,7 @@ function f:RenderTree()
     end
   end
   if professionCount == 0 then
-    f:UpdateDetail("No professions found")
+    f:UpdateDetail(L["No professions found"])
   end
 
   local dundun = MKPT_env.MKPT_ShardOfDundun
