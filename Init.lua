@@ -97,7 +97,7 @@ MKPT_env.InitProfessions = function()
           :AddEntry(MKPT_UniqueBook:New({ questId = { 82633 }, itemId = 224024, waypoint = { map = 2213, x = 0.5560, y = 0.4700 }, kp = 10, spell = 450818 })
             :AddRequirement(MKPT_CurrencyRequirement:New(3056, 565)))
           -- Algari Treatise on Alchemy (Requires skill 25)
-          :AddEntry(MKPT_Treatise:New { questId = { 83725 }, itemId = 222546, waypoint = { map = 2339, x = 0.5804, y = 0.5645 }, kp = 1, spell = 457715, atlasIcon = "Professions-Crafting-Orders-Icon", text = L["Inscription work order"] })
+          :AddEntry(MKPT_Treatise:New { questId = { 83725 }, itemId = 222546, waypoint = { map = 2339, x = 0.5804, y = 0.5645 }, kp = 1, spell = 457715, atlasIcon = "Professions-Crafting-Orders-Icon" })
           -- Algari Alchemist's Notebook
           :AddEntry(MKPT_WeeklyQuestItem:New { questId = { 84133 }, itemId = 228773, waypoint = { map = 2339, x = 0.5916, y = 0.5527 }, kp = 2, text = L["Quest: Alchemy Services Requested"] })
           -- Alchemical Sediment +2, Treasure Hunt
@@ -159,7 +159,7 @@ MKPT_env.InitProfessions = function()
           :AddEntry(MKPT_UniqueBook:New({ questId = { 82631 }, itemId = 224038, waypoint = { map = 2213, x = 0.4680, y = 0.2220 }, kp = 10, spell = 450819 })
             :AddRequirement(MKPT_CurrencyRequirement:New(3056, 565)))
           -- Algari Treatise on Blacksmithing (Requires skill 25)
-          :AddEntry(MKPT_Treatise:New { questId = { 83726 }, itemId = 222554, waypoint = { map = 2339, x = 0.5804, y = 0.5645 }, kp = 1, spell = 457717, atlasIcon = "Professions-Crafting-Orders-Icon", text = L["Inscription work order"] })
+          :AddEntry(MKPT_Treatise:New { questId = { 83726 }, itemId = 222554, waypoint = { map = 2339, x = 0.5804, y = 0.5645 }, kp = 1, spell = 457717, atlasIcon = "Professions-Crafting-Orders-Icon" })
           -- Algari Blacksmith's Journal
           :AddEntry(MKPT_WeeklyQuestItem:New { questId = { 84127 }, itemId = 228774, waypoint = { map = 2339, x = 0.5916, y = 0.5527 }, kp = 2, text = L["Quest: Blacksmithing Services Requested"] })
           -- Dense Bladestone
@@ -220,7 +220,7 @@ MKPT_env.InitProfessions = function()
           :AddEntry(MKPT_UniqueBook:New({ questId = { 82635 }, itemId = 224050, waypoint = { map = 2213, x = 0.4580, y = 0.3320 }, kp = 10, spell = 450821 })
             :AddRequirement(MKPT_CurrencyRequirement:New(3056, 565)))
           -- Algari Treatise on Enchanting (Requires skill 25)
-          :AddEntry(MKPT_Treatise:New { questId = { 83727 }, itemId = 222550, waypoint = { map = 2339, x = 0.5804, y = 0.5645 }, kp = 1, spell = 457718, atlasIcon = "Professions-Crafting-Orders-Icon", text = L["Inscription work order"] })
+          :AddEntry(MKPT_Treatise:New { questId = { 83727 }, itemId = 222550, waypoint = { map = 2339, x = 0.5804, y = 0.5645 }, kp = 1, spell = 457718, atlasIcon = "Professions-Crafting-Orders-Icon" })
           -- Algari Enchanter's Folio
           :AddEntry(MKPT_WeeklyQuestItem:New { questId = { 84084, 84085, 84086 }, itemId = 227667, waypoint = { map = 2339, x = 0.5292, y = 0.7132 }, kp = 3, text = L["Enchanting trainer quest"], unique = true })
           -- "Fleeting Arcane Manifestation"
@@ -286,7 +286,7 @@ MKPT_env.InitProfessions = function()
           :AddEntry(MKPT_UniqueBook:New({ questId = { 82632 }, itemId = 224052, waypoint = { map = 2213, x = 0.5787, y = 0.3205 }, kp = 10, spell = 450824 })
             :AddRequirement(MKPT_CurrencyRequirement:New(3056, 565)))
           -- Algari Treatise on Engineering (Requires skill 25)
-          :AddEntry(MKPT_Treatise:New { questId = { 83728 }, itemId = 222621, waypoint = { map = 2339, x = 0.5804, y = 0.5645 }, kp = 1, spell = 457721, atlasIcon = "Professions-Crafting-Orders-Icon", text = L["Inscription work order"] })
+          :AddEntry(MKPT_Treatise:New { questId = { 83728 }, itemId = 222621, waypoint = { map = 2339, x = 0.5804, y = 0.5645 }, kp = 1, spell = 457721, atlasIcon = "Professions-Crafting-Orders-Icon" })
           -- Algari Engineer's Notepad
           :AddEntry(MKPT_WeeklyQuestItem:New { questId = { 84128 }, itemId = 228775, waypoint = { map = 2339, x = 0.5916, y = 0.5527 }, kp = 1, text = L["Quest: Engineering Services Requested"] })
           -- Rust-Locked Mechanism
@@ -348,7 +348,7 @@ MKPT_env.InitProfessions = function()
           :AddEntry(MKPT_UniqueBook:New({ questId = { 82630 }, itemId = 224023, waypoint = { map = 2213, x = 0.4701, y = 0.1620 }, kp = 10, spell = 450793, currency = { id = 3056, quantity = 565 } })
             :AddRequirement(MKPT_CurrencyRequirement:New(3056, 565)))
           -- Algari Treatise on Herbalism (Requires skill 25)
-          :AddEntry(MKPT_Treatise:New { questId = { 83729 }, itemId = 222552, waypoint = { map = 2339, x = 0.5804, y = 0.5645 }, kp = 1, spell = 457723, atlasIcon = "Professions-Crafting-Orders-Icon", text = L["Inscription work order"] })
+          :AddEntry(MKPT_Treatise:New { questId = { 83729 }, itemId = 222552, waypoint = { map = 2339, x = 0.5804, y = 0.5645 }, kp = 1, spell = 457723, atlasIcon = "Professions-Crafting-Orders-Icon" })
           -- "Algari Herbalist's Notes"
           :AddEntry(MKPT_WeeklyQuestItem:New { questId = { 82970, 82958, 82965, 82916, 82962 }, itemId = 224817, waypoint = { map = 2339, x = 0.4476, y = 0.6929 }, kp = 3, text = L["Herbalism trainer quest."], unique = true })
           -- "Deepgrove Rose Petal"
@@ -469,7 +469,7 @@ MKPT_env.InitProfessions = function()
           :AddEntry(MKPT_UniqueBook:New({ questId = { 82637 }, itemId = 224054, waypoint = { map = 2213, x = 0.4779, y = 0.1871 }, kp = 10, spell = 450828 })
             :AddRequirement(MKPT_CurrencyRequirement:New(3056, 565)))
           -- Algari Treatise on Jewelcrafting (Requires skill 25)
-          :AddEntry(MKPT_Treatise:New { questId = { 83731 }, itemId = 222551, waypoint = { map = 2339, x = 0.5804, y = 0.5645 }, kp = 1, spell = 457725, atlasIcon = "Professions-Crafting-Orders-Icon", text = L["Inscription work order"] })
+          :AddEntry(MKPT_Treatise:New { questId = { 83731 }, itemId = 222551, waypoint = { map = 2339, x = 0.5804, y = 0.5645 }, kp = 1, spell = 457725, atlasIcon = "Professions-Crafting-Orders-Icon" })
           -- Algari Jewelcrafter's Notebook
           :AddEntry(MKPT_WeeklyQuestItem:New { questId = { 84130 }, itemId = 228777, waypoint = { map = 2339, x = 0.5971, y = 0.5627 }, kp = 2, text = L["Quest: Jewelcrafting Services Requested"] })
           -- "Diaphanous Gem Shards" Kobyss Ritual Cache
@@ -530,7 +530,7 @@ MKPT_env.InitProfessions = function()
           :AddEntry(MKPT_UniqueBook:New({ questId = { 82626 }, itemId = 224056, waypoint = { map = 2213, x = 0.4309, y = 0.2065 }, kp = 10, spell = 450835 })
             :AddRequirement(MKPT_CurrencyRequirement:New(3056, 565)))
           -- Algari Treatise on Leatherworking (Requires skill 25)
-          :AddEntry(MKPT_Treatise:New { questId = { 83732 }, itemId = 222549, waypoint = { map = 2339, x = 0.5804, y = 0.5645 }, kp = 1, spell = 457720, atlasIcon = "Professions-Crafting-Orders-Icon", text = L["Inscription work order"] })
+          :AddEntry(MKPT_Treatise:New { questId = { 83732 }, itemId = 222549, waypoint = { map = 2339, x = 0.5804, y = 0.5645 }, kp = 1, spell = 457720, atlasIcon = "Professions-Crafting-Orders-Icon" })
           -- Algari Leatherworker's Journal
           :AddEntry(MKPT_WeeklyQuestItem:New { questId = { 84131 }, itemId = 228778, waypoint = { map = 2339, x = 0.5971, y = 0.5627 }, kp = 2, text = L["Quest: Leatherworking Services Requested"] })
           -- Sturdy Nerubian Carapace
@@ -596,7 +596,7 @@ MKPT_env.InitProfessions = function()
           -- "Algari Miner's Notes"
           :AddEntry(MKPT_WeeklyQuestItem:New { questId = { 83104, 83105, 83103, 83106, 83102 }, itemId = 224818, waypoint = { map = 2339, x = 0.5262, y = 0.5254 }, kp = 3, text = L["Mining trainer quests"], unique = true })
           -- Algari Treatise on Mining (Requires skill 25)
-          :AddEntry(MKPT_Treatise:New { questId = { 83733 }, itemId = 222553, waypoint = { map = 2339, x = 0.5804, y = 0.5645 }, kp = 1, spell = 457726, atlasIcon = "Professions-Crafting-Orders-Icon", text = L["Inscription work order"] })
+          :AddEntry(MKPT_Treatise:New { questId = { 83733 }, itemId = 222553, waypoint = { map = 2339, x = 0.5804, y = 0.5645 }, kp = 1, spell = 457726, atlasIcon = "Professions-Crafting-Orders-Icon" })
           -- "Slab of Slate"
           :AddEntry(MKPT_WeeklyTreasure:New { questId = { 83050, 83051, 83052, 83053, 83054 }, itemId = 224583, kp = 1, atlasIcon = "Professions_Tracking_Ore", text = L["Randomly looted while mining"] })
           -- "Slab of Slate"
@@ -656,7 +656,7 @@ MKPT_env.InitProfessions = function()
           -- "Algari Skinner's Notes"
           :AddEntry(MKPT_WeeklyQuestItem:New { questId = { 83097, 83098, 83100, 82992, 82993 }, itemId = 224807, waypoint = { map = 2339, x = 0.5429, y = 0.5738 }, kp = 3, text = L["Skinning trainer quests"], unique = true })
           -- Algari Treatise on Skinning (Requires skill 25)
-          :AddEntry(MKPT_Treatise:New { questId = { 83734 }, itemId = 222649, waypoint = { map = 2339, x = 0.5804, y = 0.5645 }, kp = 1, spell = 457724, atlasIcon = "Professions-Crafting-Orders-Icon", text = L["Inscription work order"] })
+          :AddEntry(MKPT_Treatise:New { questId = { 83734 }, itemId = 222649, waypoint = { map = 2339, x = 0.5804, y = 0.5645 }, kp = 1, spell = 457724, atlasIcon = "Professions-Crafting-Orders-Icon" })
           -- "Toughened Tempest Pelt"
           :AddEntry(MKPT_WeeklyTreasure:New { questId = { 81459, 81460, 81461, 81462, 81463 }, itemId = 224780, kp = 1, atlasIcon = "worldquest-icon-skinning", text = L["Randomly looted while skinning"] })
           -- "Toughened Tempest Pelt"
@@ -714,7 +714,7 @@ MKPT_env.InitProfessions = function()
           :AddEntry(MKPT_UniqueBook:New({ questId = { 82634 }, itemId = 224036, waypoint = { map = 2213, x = 0.5063, y = 0.1680 }, kp = 10, spell = 450840 })
             :AddRequirement(MKPT_CurrencyRequirement:New(3056, 565)))
           -- Algari Treatise on Tailoring (Requires skill 25)
-          :AddEntry(MKPT_Treatise:New { questId = { 83735 }, itemId = 222547, waypoint = { map = 2339, x = 0.5804, y = 0.5645 }, kp = 1, spell = 457719, atlasIcon = "Professions-Crafting-Orders-Icon", text = L["Inscription work order"] })
+          :AddEntry(MKPT_Treatise:New { questId = { 83735 }, itemId = 222547, waypoint = { map = 2339, x = 0.5804, y = 0.5645 }, kp = 1, spell = 457719, atlasIcon = "Professions-Crafting-Orders-Icon" })
           -- Algari Tailor's Notebook
           :AddEntry(MKPT_WeeklyQuestItem:New { questId = { 84132 }, itemId = 228779, waypoint = { map = 2339, x = 0.5971, y = 0.5627 }, kp = 2, text = L["Quest: Tailoring Services Requested"] })
           -- "Spool of Webweave"
@@ -807,7 +807,7 @@ MKPT_env.InitProfessions = function()
             :AddRequirement(MKPT_CurrencyRequirement:New(3316, 750)))
           -- Thalassian Treatise on Blacksmithing
           :AddEntry(MKPT_Treatise:New({ questId = { 95128 }, itemId = 245763, waypoint = { map = 2393, x = 0.4502, y = 0.5560 }, kp = 1, spell = 1282300, atlasIcon =
-            "Professions-Crafting-Orders-Icon", text = L["Inscription work order"] })
+            "Professions-Crafting-Orders-Icon" })
             :AddRequirement(MKPT_ItemRequirement:New(245763, 1)))
           -- Thalassian Blacksmith's Journal
           :AddEntry(MKPT_WeeklyQuestItem:New { questId = { 93691 }, itemId = 263455, waypoint = { map = 2393, x = 0.4503, y = 0.5515 }, kp = 2, text = L["Quest: Blacksmithing Services Requested"] })
@@ -855,7 +855,7 @@ MKPT_env.InitProfessions = function()
             :AddRequirement(MKPT_CurrencyRequirement:New(3258, 75)))
           -- Thalassian Treatise on Enchanting
           :AddEntry(MKPT_Treatise:New({ questId = { 95129 }, itemId = 245759, waypoint = { map = 2393, x = 0.4502, y = 0.5560 }, kp = 1, spell = 1282301, atlasIcon =
-            "Professions-Crafting-Orders-Icon", text = L["Inscription work order"] })
+            "Professions-Crafting-Orders-Icon" })
             :AddRequirement(MKPT_ItemRequirement:New(245759, 1)))
           -- Thalassian Enchanter's Folio
           :AddEntry(MKPT_WeeklyQuestItem:New { questId = { 93699, 93698, 93697 }, itemId = 263464, waypoint = { map = 2393, x = 0.478, y = 0.538 }, kp = 3, text = L["Enchanting trainer quests"] })
@@ -904,7 +904,7 @@ MKPT_env.InitProfessions = function()
             :AddRequirement(MKPT_CurrencyRequirement:New(3316, 750)))
           -- Thalassian Treatise on Engineering
           :AddEntry(MKPT_Treatise:New({ questId = { 95138 }, itemId = 245809, waypoint = { map = 2393, x = 0.4502, y = 0.5560 }, kp = 1, spell = 1282302, atlasIcon =
-            "Professions-Crafting-Orders-Icon", text = L["Inscription work order"] })
+            "Professions-Crafting-Orders-Icon" })
             :AddRequirement(MKPT_ItemRequirement:New(245809, 1)))
           -- Thalassian Engineer's Notepad
           :AddEntry(MKPT_WeeklyQuestItem:New { questId = { 93692 }, itemId = 263456, waypoint = { map = 2393, x = 0.4503, y = 0.5515 }, kp = 1, text = L["Quest: Engineering Services Requested"] })
@@ -986,7 +986,7 @@ MKPT_env.InitProfessions = function()
             :AddRequirement(MKPT_CurrencyRequirement:New(3260, 75)))
           -- Thalassian Treatise on Herbalism
           :AddEntry(MKPT_Treatise:New({ questId = { 95130 }, itemId = 245761, waypoint = { map = 2393, x = 0.4502, y = 0.5560 }, kp = 1, spell = 1282303, atlasIcon =
-            "Professions-Crafting-Orders-Icon", text = L["Inscription work order"] })
+            "Professions-Crafting-Orders-Icon" })
             :AddRequirement(MKPT_ItemRequirement:New(245761, 1)))
           -- Thalassian Herbalist's Notes
           :AddEntry(MKPT_WeeklyQuestItem:New { questId = { 93700, 93701, 93702, 93703, 93704 }, itemId = 263462, waypoint = { map = 2393, x = 0.483, y = 0.5142 }, kp = 3, text = L["Herbalism trainer quests"] })
@@ -1028,7 +1028,7 @@ MKPT_env.InitProfessions = function()
             :AddRequirement(MKPT_CurrencyRequirement:New(3316, 750)))
           -- Thalassian Treatise on Inscription
           :AddEntry(MKPT_Treatise:New({ questId = { 95131 }, itemId = 245757, waypoint = { map = 2393, x = 0.4502, y = 0.5560 }, kp = 1, spell = 1282304, atlasIcon =
-            "Professions-Crafting-Orders-Icon", text = L["Inscription work order"] })
+            "Professions-Crafting-Orders-Icon" })
             :AddRequirement(MKPT_ItemRequirement:New(245757, 1)))
           -- Thalassian Scribe's Journal
           :AddEntry(MKPT_WeeklyQuestItem:New { questId = { 93693 }, itemId = 263457, waypoint = { map = 2393, x = 0.4503, y = 0.5515 }, kp = 4, text = L["Quest: Inscription Services Requested"] })
@@ -1073,7 +1073,7 @@ MKPT_env.InitProfessions = function()
             :AddRequirement(MKPT_CurrencyRequirement:New(3316, 750)))
           -- Thalassian Treatise on Jewelcrafting
           :AddEntry(MKPT_Treatise:New({ questId = { 95133 }, itemId = 245760, waypoint = { map = 2393, x = 0.4502, y = 0.5560 }, kp = 1, spell = 1282305, atlasIcon =
-            "Professions-Crafting-Orders-Icon", text = L["Inscription work order"] })
+            "Professions-Crafting-Orders-Icon" })
             :AddRequirement(MKPT_ItemRequirement:New(245760, 1)))
           -- Thalassian Jewelcrafter's Notebook
           :AddEntry(MKPT_WeeklyQuestItem:New { questId = { 93694 }, itemId = 263458, waypoint = { map = 2393, x = 0.4503, y = 0.5515 }, kp = 3, text = L["Quest: Jewelcrafting Services Requested"] })
@@ -1117,7 +1117,7 @@ MKPT_env.InitProfessions = function()
             :AddRequirement(MKPT_CurrencyRequirement:New(3316, 750)))
           -- Thalassian Treatise on Leatherworking
           :AddEntry(MKPT_Treatise:New({ questId = { 95134 }, itemId = 245758, waypoint = { map = 2393, x = 0.4502, y = 0.5560 }, kp = 1, spell = 1282306, atlasIcon =
-            "Professions-Crafting-Orders-Icon", text = L["Inscription work order"] })
+            "Professions-Crafting-Orders-Icon" })
             :AddRequirement(MKPT_ItemRequirement:New(245758, 1)))
           -- Thalassian Leatherworker's Journal
           :AddEntry(MKPT_WeeklyQuestItem:New { questId = { 93695 }, itemId = 263459, waypoint = { map = 2393, x = 0.4503, y = 0.5515 }, kp = 2, text = L["Quest: Leatherworking Services Requested"] })
@@ -1193,7 +1193,7 @@ MKPT_env.InitProfessions = function()
             :AddRequirement(MKPT_CurrencyRequirement:New(3264, 75)))
           -- Thalassian Treatise on Mining
           :AddEntry(MKPT_Treatise:New({ questId = { 95135 }, itemId = 245762, waypoint = { map = 2393, x = 0.4502, y = 0.5560 }, kp = 1, spell = 1282307, atlasIcon =
-            "Professions-Crafting-Orders-Icon", text = L["Inscription work order"] })
+            "Professions-Crafting-Orders-Icon" })
             :AddRequirement(MKPT_ItemRequirement:New(245762, 1)))
           -- Thalassian Miner's Notes
           :AddEntry(MKPT_WeeklyQuestItem:New { questId = { 93705, 93706, 93707, 93708, 93709 }, itemId = 263463, waypoint = { map = 2393, x = 0.426, y = 0.528 }, kp = 3, text = L["Mining trainer quests"] })
@@ -1239,7 +1239,7 @@ MKPT_env.InitProfessions = function()
             :AddRequirement(MKPT_CurrencyRequirement:New(3265, 75)))
           -- Thalassian Treatise on Skinning
           :AddEntry(MKPT_Treatise:New({ questId = { 95136 }, itemId = 245828, waypoint = { map = 2393, x = 0.4502, y = 0.5560 }, kp = 1, spell = 1282308, atlasIcon =
-            "Professions-Crafting-Orders-Icon", text = L["Inscription work order"] })
+            "Professions-Crafting-Orders-Icon" })
             :AddRequirement(MKPT_ItemRequirement:New(245828, 1)))
           -- Thalassian Skinner's Notes
           :AddEntry(MKPT_WeeklyQuestItem:New { questId = { 93710, 93711, 93712, 93713, 93714 }, itemId = 263461, waypoint = { map = 2393, x = 0.432, y = 0.5556 }, kp = 3, text = L["Skinning trainer quests"] })
@@ -1281,7 +1281,7 @@ MKPT_env.InitProfessions = function()
             :AddRequirement(MKPT_CurrencyRequirement:New(3316, 750)))
           -- Thalassian Treatise on Tailoring
           :AddEntry(MKPT_Treatise:New({ questId = { 95137 }, itemId = 245756, waypoint = { map = 2393, x = 0.4502, y = 0.5560 }, kp = 1, spell = 1282309, atlasIcon =
-            "Professions-Crafting-Orders-Icon", text = L["Inscription work order"] })
+            "Professions-Crafting-Orders-Icon" })
             :AddRequirement(MKPT_ItemRequirement:New(245756, 1)))
           -- Thalassian Tailor's Notebook
           :AddEntry(MKPT_WeeklyQuestItem:New { questId = { 93696 }, itemId = 263460, waypoint = { map = 2393, x = 0.4503, y = 0.5515 }, kp = 2, text = L["Quest: Tailoring Services Requested"] })
