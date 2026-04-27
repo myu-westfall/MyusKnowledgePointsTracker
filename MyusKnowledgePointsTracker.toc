@@ -31,6 +31,7 @@ libs\load_libs.xml
 Locales\Core.lua
 Locales\zhCN.lua
 Locales\ptBR.lua
+MKPT_Config.lua
 Utils.lua
 MKPT_Item.lua
 MKPT_Profession.lua
@@ -39,7 +40,6 @@ MKPT_Requirement.lua
 MKPT_Ui.lua
 MKPT_MinimapIcon.lua
 MKPT_RightClickMenu.lua
-MKPT_Config.lua
 MKPT_SlashCommand.lua
 MKPT_Options.lua
 Init.lua

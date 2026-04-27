@@ -43,6 +43,13 @@ function MKPT_env.InitializeSavedVariables()
         scale = 1.0,
         lockWindow = false,
         hideInCombat = false,
+        colors = {
+          weekly= "FF006FDD",
+          catchUp= "FF1EFF00",
+          unique= "FFA435EE",
+          missing= "FFFF8000",
+          unspent= "FFFF6DCE",
+        }
       }
     }
   }
