@@ -43,7 +43,8 @@
         "CreateSettingsListSectionHeaderInitializer",
         "StaticPopup_Show",
         "ChatFrame1",
-        "LE_PARTY_CATEGORY_INSTANCE"
+        "LE_PARTY_CATEGORY_INSTANCE",
+        "CreateSettingsButtonInitializer"
     ],
     "Lua.type.weakUnionCheck": true
 }

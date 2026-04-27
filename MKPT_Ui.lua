@@ -265,7 +265,8 @@ local function AddProfessionButton(profession)
   b.background:SetVertexColor(backgroundColor.r, backgroundColor.g, backgroundColor.b, backgroundColor.a)
 
   local remaining = profession:CalculateRemainingKps()
-  b.leftText:SetText(Utils.WeeklyTextColor(L["W:"] .. remaining.weekly) .. Utils.CatchUpTextColor(" +" .. remaining.catchUp))
+  b.leftText:SetText(Utils.WeeklyTextColor(L["W:"] .. remaining.weekly) ..
+  Utils.CatchUpTextColor(" +" .. remaining.catchUp))
 
   local missing = profession:CalculateSpendableKps()
   local unallocated = profession:GetUnallocatedKps()
@@ -423,7 +424,7 @@ local function AddCurrencyButton(currency, currency2)
   b.middleText:SetJustifyH("CENTER")
 
   b.rightText:SetText(CreateTextureMarkup(currency2.icon, 64, 64, 16, 16, 0.05, 0.95, 0.05, 0.95) ..
-  " " .. currency2:GetQuantity().quantity)
+    " " .. currency2:GetQuantity().quantity)
   b.rightText:SetJustifyH("CENTER")
 
   b.highlight:SetAlpha(0)
@@ -575,6 +576,7 @@ function MKPT_env.ToggleAutoHide()
     f.hideButton:SetHighlightTexture("Interface\\AddOns\\MyusKnowledgePointsTracker\\Textures\\MKPT_AutohideOff.tga",
       "BLEND")
   end
+  Settings.NotifyUpdate("MKPT_Autohide")
 end
 
 function MKPT_env.RefreshAutoHide()

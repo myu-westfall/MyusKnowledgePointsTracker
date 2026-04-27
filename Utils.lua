@@ -8,19 +8,19 @@ local Utils = {}
 MKPT_env.Utils = Utils
 
 function Utils.WeeklyTextColor(text)
-    return WrapTextInColorCode(text, "FF006FDD")
+    return WrapTextInColorCode(text, MKPT_env.db.ui.colors.weekly)
 end
 
 function Utils.CatchUpTextColor(text)
-    return WrapTextInColorCode(text, "FF1EFF00")
+    return WrapTextInColorCode(text, MKPT_env.db.ui.colors.catchUp)
 end
 
 function Utils.UniqueTextColor(text)
-    return WrapTextInColorCode(text, "FFA435EE")
+    return WrapTextInColorCode(text, MKPT_env.db.ui.colors.unique)
 end
 
 function Utils.MissingTextColor(text)
-    return WrapTextInColorCode(text, "FFFF8000")
+    return WrapTextInColorCode(text, MKPT_env.db.ui.colors.missing)
 end
 
 function Utils.DarkmoonTextColor(text)
@@ -40,7 +40,7 @@ function Utils.GoldTextColor(text)
 end
 
 function Utils.UnspentKpsTextColor(text)
-    return WrapTextInColorCode(text, "FFFF6DCE")
+    return WrapTextInColorCode(text, MKPT_env.db.ui.colors.unspent)
 end
 
 Utils.WEEKLY_QUEST_ICON = CreateAtlasMarkup("quest-recurring-available", 16, 16)
@@ -50,6 +50,7 @@ Utils.UNIQUE_TREASURE_ICON = CreateAtlasMarkup("poi-islands-table", 16, 16)
 Utils.TREATISE_ICON = CreateAtlasMarkup("Professions-Crafting-Orders-Icon", 16, 16)
 Utils.UNIQUE_TREASURE_ICON_FADED = CreateAtlasMarkup("poi-islands-table", 16, 16, 0, 0, 64, 64, 64)
 Utils.CATCHUP_ICON = CreateAtlasMarkup("characterundelete-RestoreButton", 16, 16)
-Utils.FIRST_GATHER_ICON = CreateAtlasMarkup("Professions_Tracking_Ore", 16, 16) ..  "/" .. CreateAtlasMarkup("Professions_Tracking_Herb", 16, 16)
+Utils.FIRST_GATHER_ICON = CreateAtlasMarkup("Professions_Tracking_Ore", 16, 16) ..
+    "/" .. CreateAtlasMarkup("Professions_Tracking_Herb", 16, 16)
 Utils.SETTINGS_ICON = CreateAtlasMarkup("mechagon-projects", 16, 16)
 Utils.DUNDUN_ICON = CreateTextureMarkup("Interface\\Icons\\INV_Ore_FelIron", 64, 64, 16, 16, 0.05, 0.95, 0.05, 0.95)
