@@ -280,8 +280,16 @@ function MKPT_DarkmoonQuest:GetIcon()
 end
 
 function MKPT_DarkmoonQuest:IsDmfUp()
-  local dayOfWeek = tonumber(date("%w"))
-  local dayOfMonth = tonumber(date("%e"))
+  -- Get current realm time
+  local calendarTime = C_DateAndTime.GetCurrentCalendarTime()
+  
+  -- Sometimes GetCurrentCalendarTime does not register on login
+  if not calendarTime or calendarTime.year == 1999 then
+    return false
+  end
+
+  local dayOfMonth = calendarTime.monthDay
+  local weekday = calendarTime.weekday -- 1=Sunday, 2=Monday, ..., 7=Saturday
 
   local firstSundayOfMonth = ((dayOfMonth - (dayOfWeek + 1)) % 7) + 1
   local daysSinceFirstSunday = dayOfMonth - firstSundayOfMonth
