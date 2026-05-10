@@ -288,8 +288,8 @@ function MKPT_DarkmoonQuest:IsDmfUp()
     return false
   end
 
+  local dayOfWeek = calendarTime.weekday
   local dayOfMonth = calendarTime.monthDay
-  local weekday = calendarTime.weekday -- 1=Sunday, 2=Monday, ..., 7=Saturday
 
   local firstSundayOfMonth = ((dayOfMonth - (dayOfWeek + 1)) % 7) + 1
   local daysSinceFirstSunday = dayOfMonth - firstSundayOfMonth
