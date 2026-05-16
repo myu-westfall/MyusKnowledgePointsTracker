@@ -231,7 +231,6 @@ function MKPT_CatchUp:GetDescription()
     for _, v in ipairs(self.requirements) do
       requirementsText = requirementsText..v:GetDescription().."\n"
     end
-    
   end
 
   return requirementsText
@@ -259,6 +258,7 @@ function MKPT_DarkmoonQuest:New(o)
 
   return MKPT_Item.New(self, o)
 end
+
 function MKPT_DarkmoonQuest:GetId()
   return self.questId and self.questId[1]
 end
@@ -280,20 +280,9 @@ function MKPT_DarkmoonQuest:GetIcon()
 end
 
 function MKPT_DarkmoonQuest:IsDmfUp()
-  -- Get current realm time
-  local calendarTime = C_DateAndTime.GetCurrentCalendarTime()
-  
-  -- Sometimes GetCurrentCalendarTime does not register on login
-  if not calendarTime or calendarTime.year == 1999 then
-    return false
-  end
-
-  local dayOfWeek = calendarTime.weekday
-  local dayOfMonth = calendarTime.monthDay
-
-  local firstSundayOfMonth = ((dayOfMonth - (dayOfWeek + 1)) % 7) + 1
-  local daysSinceFirstSunday = dayOfMonth - firstSundayOfMonth
-  return daysSinceFirstSunday >= 0 and daysSinceFirstSunday <= 6
+  local playerRegion = Utils.GetPlayerRegion()
+  local utcTime = GetServerTime()
+  return Utils.IsDmfUp(playerRegion, utcTime)
 end
 
 function MKPT_DarkmoonQuest:GetRemainingKnowledgePoints()
