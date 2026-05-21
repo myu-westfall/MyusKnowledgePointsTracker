@@ -40,7 +40,7 @@ function MKPT_Profession:New(professionId, spellId, catchUpCurrencyId, trainerLo
   profession.expansionTrainerName = LEARN_SKILL_TEMPLATE:format(profession.expansionName)
   profession.skillLine = info.parentProfessionID
   profession.icon = C_TradeSkillUI.GetTradeSkillTexture(profession.id)
-  profession.expanded = false
+  profession.expanded = MKPT_env.db.config.professionsStartExpanded or MKPT_env.charDb.config.professionsStartExpanded
   profession.entries = {}
   return profession
 end

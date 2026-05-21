@@ -54,6 +54,10 @@ L["Missing Color"] = "Cor dos pontos restantes"
 L["Changes the color of Missing knowledge points"] = "Troca a cor dos pontos restantes (para finalizar a árvore)"
 L["Unspent Color"] = "Cor dos pontos não gastos"
 L["Changes the color of Unspent knowledge points"] = "Troca a cor dos pontos não gastos"
+L["Start expanded (All characters)"] = "Iniciar expandido (Todos os personagens)"
+L["Professions are expanded on login for all characters, unchecking this will cause them to be collapsed (default)"] = "Profissões são expandidas ao iniciar o jogo (Todos os personagens), desmarcando isso as profissões iniciam o jogo recolhidas (Padrão)"
+L["Start expanded (Only this character)"] =  "Iniciar expandido (Apenas neste personagem)"
+L["Professions are expanded on login for this character, unchecking this will cause them to be collapsed (default)"] =  "Profissões são expandidas ao iniciar o jogo (Apenas neste personagem), desmarcando isso as profissões iniciam o jogo recolhidas (Padrão)"
 
 -- MKPT_SlashCommand.lua
 L["Available commands:"] = "Comandos disponíveis:"

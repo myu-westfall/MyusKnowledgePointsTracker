@@ -9,6 +9,9 @@ function MKPT_env.InitializeSavedVariables()
         show = true,
         firstTimeLoaded = true,
       },
+      config = {
+        professionsStartExpanded = false,
+      }
     },
     global = {
       minimap = {
@@ -31,6 +34,7 @@ function MKPT_env.InitializeSavedVariables()
         hideWhenDone = false,
         minimized = true,
         showAllProfessions = false,
+        professionsStartExpanded = false,
       },
       ui = {
         autohide = false,

@@ -3,6 +3,7 @@ local L = MKPT_env.L
 
 function MKPT_env.InitializeOptionsMenu()
     local db = MKPT_env.db
+    local charDb = MKPT_env.charDb
     -- Create and register the main category for your addon in the Interface Options
     local category, layout, _ = Settings.RegisterVerticalLayoutCategory(L["Myu's kp Tracker"])
     MKPT_env.categoryId = category:GetID()
@@ -121,6 +122,50 @@ function MKPT_env.InitializeOptionsMenu()
             SetValue
         )
         local tooltip = L["Hides the window when in combat"]
+        Settings.CreateCheckbox(generalSubcategory, setting, tooltip)
+    end
+
+    do
+        local GetValue = function()
+            return db.config.professionsStartExpanded
+        end
+        local SetValue = function(value)
+            db.config.professionsStartExpanded = value
+        end
+        local name = L["Start expanded (All characters)"]
+        local defaultValue = false
+        local setting = Settings.RegisterProxySetting(
+            generalSubcategory,
+            "MKPT_ProfessionsStartExpanded",
+            type(defaultValue),
+            name,
+            defaultValue,
+            GetValue,
+            SetValue
+        )
+        local tooltip = L["Professions are expanded on login for all characters, unchecking this will cause them to be collapsed (default)"]
+        Settings.CreateCheckbox(generalSubcategory, setting, tooltip)
+    end
+
+    do
+        local GetValue = function()
+            return charDb.config.professionsStartExpanded
+        end
+        local SetValue = function(value)
+            charDb.config.professionsStartExpanded = value
+        end
+        local name = L["Start expanded (Only this character)"]
+        local defaultValue = false
+        local setting = Settings.RegisterProxySetting(
+            generalSubcategory,
+            "MKPT_ProfessionsStartExpandedCharacter",
+            type(defaultValue),
+            name,
+            defaultValue,
+            GetValue,
+            SetValue
+        )
+        local tooltip = L["Professions are expanded on login for this character, unchecking this will cause them to be collapsed (default)"]
         Settings.CreateCheckbox(generalSubcategory, setting, tooltip)
     end
 

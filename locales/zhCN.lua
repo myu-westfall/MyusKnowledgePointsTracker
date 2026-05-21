@@ -55,6 +55,10 @@ L["Missing Color"] = "缺失点数颜色"
 L["Changes the color of Missing knowledge points"] = "更改缺失知识点的颜色（用于完成整棵树）"
 L["Unspent Color"] = "未使用点数颜色"
 L["Changes the color of Unspent knowledge points"] = "更改未使用知识点的颜色"
+L["Start expanded (All characters)"] = "默认展开（所有角色）"
+L["Professions are expanded on login for all characters, unchecking this will cause them to be collapsed (default)"] = "所有角色登录时专业将默认展开，取消勾选后专业将默认折叠（默认）"
+L["Start expanded (Only this character)"] = "默认展开（仅此角色）"
+L["Professions are expanded on login for this character, unchecking this will cause them to be collapsed (default)"] = "此角色登录时专业将默认展开，取消勾选后专业将默认折叠（默认）"
 -- End of LLM translated section
 
 -- MKPT_SlashCommand.lua
