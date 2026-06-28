@@ -63,3 +63,5 @@ end
 
 local MKPT_UnalloyedAbundance = MKPT_ShardOfDundun:New(3377)
 MKPT_env.MKPT_UnalloyedAbundance = MKPT_UnalloyedAbundance
+
+-- 94952 questID for extra 2 shards of dundun when grabbing weekly quest

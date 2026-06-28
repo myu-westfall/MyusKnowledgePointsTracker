@@ -23,8 +23,9 @@ MKPT_env.MKPT_Profession = MKPT_Profession
 ---@field skillLine number - skillLineId of the base profession
 ---@field icon texture - icon of the profession
 ---@field expanded boolean - wether to show/hide profession items on the menu
+---@field artisanCurrencyId number - currencyId of the artisan currency (moxie)
 ---@field entries table - holds profession related MKPT_Items
-function MKPT_Profession:New(professionId, spellId, catchUpCurrencyId, trainerLocation)
+function MKPT_Profession:New(professionId, spellId, catchUpCurrencyId, trainerLocation, artisanCurrencyId)
   local profession = {}
   setmetatable(profession, self)
   self.__index = self
@@ -41,6 +42,7 @@ function MKPT_Profession:New(professionId, spellId, catchUpCurrencyId, trainerLo
   profession.skillLine = info.parentProfessionID
   profession.icon = C_TradeSkillUI.GetTradeSkillTexture(profession.id)
   profession.expanded = MKPT_env.db.config.professionsStartExpanded or MKPT_env.charDb.config.professionsStartExpanded
+  profession.artisanCurrencyId = artisanCurrencyId
   profession.entries = {}
   return profession
 end
@@ -209,4 +211,9 @@ function MKPT_Profession:GetDescription()
   local waypoint = self.trainerLocation
   local mapInfo = C_Map.GetMapInfo(waypoint.map)
   return string.format("%s\n%s - x:%.2f y:%.2f", self.expansionTrainerName, mapInfo.name, waypoint.x * 100, waypoint.y * 100)
+end
+
+function MKPT_Profession:GetArtisanCurrency()
+  if not self.artisanCurrencyId then return nil end
+  return C_CurrencyInfo.GetCurrencyInfo(self.artisanCurrencyId)
 end

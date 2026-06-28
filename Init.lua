@@ -739,7 +739,7 @@ MKPT_env.InitProfessions = function()
     [Enum.ExpansionLevel.Midnight] = {
       -- Midnight
       -- 3211 Midnight Alchemy
-      [2906] = MKPT_Profession:New(2906, 471003, 3189, { map = 2393, x = 0.4704, y = 0.5197 })
+      [2906] = MKPT_Profession:New(2906, 471003, 3189, { map = 2393, x = 0.4704, y = 0.5197 }, 3256)
           --Freshly Plucked Peacebloom
           :AddEntry(MKPT_UniqueTreasure:New { questId = { 89115 }, itemId = 238536, waypoint = { map = 2393, x = 0.4911, y = 0.7585 }, kp = 3, vignetteId = { 6844 } })
           --Pristine Potion
@@ -783,7 +783,7 @@ MKPT_env.InitProfessions = function()
           )
       ,
       -- 3210       Midnight Blacksmithing
-      [2907] = MKPT_Profession:New(2907, 471004, 3199, { map = 2393, x = 0.4365, y = 0.5177 })
+      [2907] = MKPT_Profession:New(2907, 471004, 3199, { map = 2393, x = 0.4365, y = 0.5177 }, 3257)
           -- Deconstructed Forge Techniques
           :AddEntry(MKPT_UniqueTreasure:New { questId = { 89177 }, itemId = 238540, waypoint = { map = 2393, x = 0.2697, y = 0.6029 }, kp = 3, vignetteId = { 6840 } })
           -- Metalworking Cheat Sheet
@@ -827,7 +827,7 @@ MKPT_env.InitProfessions = function()
           )
       ,
       -- 3209       Midnight Enchanting
-      [2909] = MKPT_Profession:New(2909, 471006, 3198, { map = 2393, x = 0.4800, y = 0.5385 })
+      [2909] = MKPT_Profession:New(2909, 471006, 3198, { map = 2393, x = 0.4800, y = 0.5385 }, 3258)
           -- Everblazing Sunmote
           :AddEntry(MKPT_UniqueTreasure:New { questId = { 89103 }, itemId = 238551, waypoint = { map = 2395, x = 0.6075, y = 0.5301 }, kp = 3, vignetteId = { 6829 } })
           -- Sin'dorei Enchanting Rod
@@ -880,7 +880,7 @@ MKPT_env.InitProfessions = function()
           )
       ,
       -- 3208       Midnight Engineering
-      [2910] = MKPT_Profession:New(2910, 471007, 3197, { map = 2393, x = 0.4352, y = 0.5410 })
+      [2910] = MKPT_Profession:New(2910, 471007, 3197, { map = 2393, x = 0.4352, y = 0.5410 }, 3259)
           -- One Engineer's Junk
           :AddEntry(MKPT_UniqueTreasure:New { questId = { 89133 }, itemId = 238556, waypoint = { map = 2393, x = 0.5132, y = 0.7445 }, kp = 3, vignetteId = { 6824 } })
           -- What To Do When Nothing Works
@@ -924,7 +924,7 @@ MKPT_env.InitProfessions = function()
           )
       ,
       -- 3207       Midnight Herbalism
-      [2912] = MKPT_Profession:New(2912, 471009, 3196, { map = 2393, x = 0.4830, y = 0.5142 })
+      [2912] = MKPT_Profession:New(2912, 471009, 3196, { map = 2393, x = 0.4830, y = 0.5142 }, 3260)
           -- Simple Leaf Pruners
           :AddEntry(MKPT_UniqueTreasure:New { questId = { 89160 }, itemId = 238470, waypoint = { map = 2393, x = 0.4901, y = 0.7595 }, kp = 3, vignetteId = { 6851 } })
           -- A Spade
@@ -1004,7 +1004,7 @@ MKPT_env.InitProfessions = function()
             :AddRequirement(MKPT_KpItemRequirement:New(MKPT_Item.FindByQuestId(81430))))
       ,
       -- 3205, 3206 Midnight Inscription
-      [2913] = MKPT_Profession:New(2913, 471010, 3195, { map = 2393, x = 0.4691, y = 0.5161 })
+      [2913] = MKPT_Profession:New(2913, 471010, 3195, { map = 2393, x = 0.4691, y = 0.5161 }, 3261)
           -- Songwriter's Pen
           :AddEntry(MKPT_UniqueTreasure:New { questId = { 89073 }, itemId = 238578, waypoint = { map = 2393, x = 0.4759, y = 0.5041 }, kp = 3, vignetteId = { 6870 } })
           -- Songwriter's Quill
@@ -1049,7 +1049,7 @@ MKPT_env.InitProfessions = function()
           )
       ,
       -- 3204       Midnight Jewelcrafting
-      [2914] = MKPT_Profession:New(2914, 471011, 3194, { map = 2393, x = 0.4818, y = 0.5509 })
+      [2914] = MKPT_Profession:New(2914, 471011, 3194, { map = 2393, x = 0.4818, y = 0.5509 }, 3262)
           -- Sin'dorei Masterwork Chisel
           :AddEntry(MKPT_UniqueTreasure:New { questId = { 89122 }, itemId = 238580, waypoint = { map = 2393, x = 0.5064, y = 0.5651 }, kp = 3, vignetteId = { 6868 } })
           -- Dual-Function Magnifiers
@@ -1093,7 +1093,7 @@ MKPT_env.InitProfessions = function()
           )
       ,
       -- 3203       Midnight Leatherworking
-      [2915] = MKPT_Profession:New(2915, 471012, 3193, { map = 2393, x = 0.4314, y = 0.5576 })
+      [2915] = MKPT_Profession:New(2915, 471012, 3193, { map = 2393, x = 0.4314, y = 0.5576 }, 3263)
           -- Artisan's Considered Order
           :AddEntry(MKPT_UniqueTreasure:New { questId = { 89096 }, itemId = 238595, waypoint = { map = 2393, x = 0.4477, y = 0.5626 }, kp = 3, vignetteId = { 6861 } })
           -- Amani Leatherworker's Tool
@@ -1140,7 +1140,7 @@ MKPT_env.InitProfessions = function()
           )
       ,
       -- 3202       Midnight Mining
-      [2916] = MKPT_Profession:New(2916, 471013, 3192, { map = 2393, x = 0.4259, y = 0.5286 })
+      [2916] = MKPT_Profession:New(2916, 471013, 3192, { map = 2393, x = 0.4259, y = 0.5286 }, 3265)
           -- Solid Ore Punchers
           :AddEntry(MKPT_UniqueTreasure:New { questId = { 89147 }, itemId = 238599, waypoint = { map = 2395, x = 0.3798, y = 0.4537 }, kp = 3, vignetteId = { 6857 } })
           -- Spelunker's Lucky Charm
@@ -1211,7 +1211,7 @@ MKPT_env.InitProfessions = function()
             :AddRequirement(MKPT_KpItemRequirement:New(MKPT_Item.FindByQuestId(88678))))
       ,
       -- 3201       Midnight Skinning
-      [2917] = MKPT_Profession:New(2917, 471014, 3191, { map = 2393, x = 0.4320, y = 0.5557 })
+      [2917] = MKPT_Profession:New(2917, 471014, 3191, { map = 2393, x = 0.4320, y = 0.5557 }, 3265)
           -- Sin'dorei Tanning Oil
           :AddEntry(MKPT_UniqueTreasure:New { questId = { 89171 }, itemId = 238633, waypoint = { map = 2393, x = 0.4313, y = 0.5562 }, kp = 3, vignetteId = { 6787 } })
           -- Thalassian Skinning Knife
@@ -1257,7 +1257,7 @@ MKPT_env.InitProfessions = function()
             :AddRequirement(MKPT_KpItemRequirement:New(MKPT_Item.FindByQuestId(88529))))
       ,
       -- 3200       Midnight Tailoring
-      [2918] = MKPT_Profession:New(2918, 471015, 3190, { map = 2393, x = 0.4820, y = 0.5399 })
+      [2918] = MKPT_Profession:New(2918, 471015, 3190, { map = 2393, x = 0.4820, y = 0.5399 }, 3266)
           -- A Really Nice Curtain
           :AddEntry(MKPT_UniqueTreasure:New { questId = { 89079 }, itemId = 238613, waypoint = { map = 2393, x = 0.3575, y = 0.6124 }, kp = 3, vignetteId = { 6799 } })
           -- Particularly Enchanting Tablecloth
