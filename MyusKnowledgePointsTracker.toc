@@ -6,6 +6,7 @@
 ## Notes: Tracks acquisition of knowledge points for professions
 ## Notes-ptBR: Rastreia os pontos de conhecimento das profissões
 ## Notes-zhCN: 追踪专业知识点获取详情
+## Notes-ruRU: Отслеживает получение очков знания для профессий
 
 ## Author: Myu
 ## Dependencies: Blizzard_Professions
