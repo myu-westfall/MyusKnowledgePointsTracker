@@ -266,14 +266,17 @@ local function AddProfessionButton(profession)
 
   local remaining = profession:CalculateRemainingKps()
   b.leftText:SetText(Utils.WeeklyTextColor(L["W:"] .. remaining.weekly) ..
-  Utils.CatchUpTextColor(" +" .. remaining.catchUp))
+    Utils.CatchUpTextColor(" +" .. remaining.catchUp))
 
   local missing = profession:CalculateSpendableKps()
   local unallocated = profession:GetUnallocatedKps()
   local rightText = unallocated > 0 and Utils.UnspentKpsTextColor(unallocated) or Utils.MissingTextColor(missing)
   b.rightText:SetText(Utils.UniqueTextColor(L["U:"] .. remaining.unique) .. " " .. rightText)
   local professionCurrency = profession:GetArtisanCurrency()
-  b.rightText:SetText(CreateTextureMarkup(professionCurrency.iconFileID, 64, 64, 16, 16, 0.05, 0.95, 0.05, 0.95) .. " " .. professionCurrency.quantity)
+  if professionCurrency then
+    b.rightText:SetText(CreateTextureMarkup(professionCurrency.iconFileID, 64, 64, 16, 16, 0.05, 0.95, 0.05, 0.95) ..
+    " " .. professionCurrency.quantity)
+  end
 
   local middleText = profession.name
   local skillLevel = profession:GetSkillLevel()
