@@ -34,7 +34,6 @@ L["Row Background Opacity"] = "Прозрачность фона строк"
 L["Changes row background opacity"] = "Изменяет прозрачность фона для строк списка"
 L["UI scale"] = "Масштаб интерфейса"
 L["Resizes the addon window"] = "Изменяет размер окна аддона"
--- LLM translated section
 L["General"] = "Общие"
 L["Subcategories"] = "Подкатегории"
 L["Go to general options"] = "Перейти к общим настройкам"
@@ -59,7 +58,6 @@ L["Start expanded (All characters)"] = "Разворачивать при вхо
 L["Professions are expanded on login for all characters, unchecking this will cause them to be collapsed (default)"] = "Профессии будут развернуты при входе для всех персонажей. Если снять галочку, они будут свернуты (по умолчанию)."
 L["Start expanded (Only this character)"] = "Разворачивать при входе (Только этот персонаж)"
 L["Professions are expanded on login for this character, unchecking this will cause them to be collapsed (default)"] = "Профессии будут развернуты при входе для этого персонажа. Если снять галочку, они будут свернуты (по умолчанию)."
--- End of LLM translated section
 
 -- MKPT_SlashCommand.lua
 L["Available commands:"] = "Доступные команды:"
