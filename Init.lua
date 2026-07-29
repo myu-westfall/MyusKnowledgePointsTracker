@@ -777,9 +777,6 @@ MKPT_env.InitProfessions = function()
           :AddEntry(MKPT_PatronCatchUp:New({ questId = {}, itemId = 228724, atlasIcon =
             "Professions-Crafting-Orders-Icon", kp = 1, text = PROFESSIONS_CRAFTING_ORDERS_PAGE_NAME:format(
             PROFESSIONS_CRAFTER_ORDER_TAB_NPC) })
-            :AddRequirement(MKPT_KpItemRequirement:New(MKPT_Item.FindByQuestId(93528)))
-            :AddRequirement(MKPT_KpItemRequirement:New(MKPT_Item.FindByQuestId(93529)))
-            :AddRequirement(MKPT_KpItemRequirement:New(MKPT_Item.FindByQuestId(93690)))
           )
       ,
       -- 3210       Midnight Blacksmithing
@@ -821,9 +818,6 @@ MKPT_env.InitProfessions = function()
           :AddEntry(MKPT_PatronCatchUp:New({ questId = {}, itemId = 246322, atlasIcon =
             "Professions-Crafting-Orders-Icon", kp = 1, text = PROFESSIONS_CRAFTING_ORDERS_PAGE_NAME:format(
             PROFESSIONS_CRAFTER_ORDER_TAB_NPC) })
-            :AddRequirement(MKPT_KpItemRequirement:New(MKPT_Item.FindByQuestId(93691)))
-            :AddRequirement(MKPT_KpItemRequirement:New(MKPT_Item.FindByQuestId(93530)))
-            :AddRequirement(MKPT_KpItemRequirement:New(MKPT_Item.FindByQuestId(93531)))
           )
       ,
       -- 3209       Midnight Enchanting
@@ -918,9 +912,6 @@ MKPT_env.InitProfessions = function()
           :AddEntry(MKPT_PatronCatchUp:New({ questId = {}, itemId = 246326, atlasIcon =
             "Professions-Crafting-Orders-Icon", kp = 1, text = PROFESSIONS_CRAFTING_ORDERS_PAGE_NAME:format(
             PROFESSIONS_CRAFTER_ORDER_TAB_NPC) })
-            :AddRequirement(MKPT_KpItemRequirement:New(MKPT_Item.FindByQuestId(93692)))
-            :AddRequirement(MKPT_KpItemRequirement:New(MKPT_Item.FindByQuestId(93534)))
-            :AddRequirement(MKPT_KpItemRequirement:New(MKPT_Item.FindByQuestId(93535)))
           )
       ,
       -- 3207       Midnight Herbalism
@@ -1043,9 +1034,6 @@ MKPT_env.InitProfessions = function()
           :AddEntry(MKPT_PatronCatchUp:New({ questId = {}, itemId = 246328, atlasIcon =
             "Professions-Crafting-Orders-Icon", kp = 1, text = PROFESSIONS_CRAFTING_ORDERS_PAGE_NAME:format(
             PROFESSIONS_CRAFTER_ORDER_TAB_NPC) })
-            :AddRequirement(MKPT_KpItemRequirement:New(MKPT_Item.FindByQuestId(93693)))
-            :AddRequirement(MKPT_KpItemRequirement:New(MKPT_Item.FindByQuestId(93536)))
-            :AddRequirement(MKPT_KpItemRequirement:New(MKPT_Item.FindByQuestId(93537)))
           )
       ,
       -- 3204       Midnight Jewelcrafting
@@ -1087,9 +1075,6 @@ MKPT_env.InitProfessions = function()
           :AddEntry(MKPT_PatronCatchUp:New({ questId = {}, itemId = 246330, atlasIcon =
             "Professions-Crafting-Orders-Icon", kp = 1, text = PROFESSIONS_CRAFTING_ORDERS_PAGE_NAME:format(
             PROFESSIONS_CRAFTER_ORDER_TAB_NPC) })
-            :AddRequirement(MKPT_KpItemRequirement:New(MKPT_Item.FindByQuestId(93694)))
-            :AddRequirement(MKPT_KpItemRequirement:New(MKPT_Item.FindByQuestId(93538)))
-            :AddRequirement(MKPT_KpItemRequirement:New(MKPT_Item.FindByQuestId(93539)))
           )
       ,
       -- 3203       Midnight Leatherworking
@@ -1134,9 +1119,6 @@ MKPT_env.InitProfessions = function()
           :AddEntry(MKPT_PatronCatchUp:New({ questId = {}, itemId = 246332, atlasIcon =
             "Professions-Crafting-Orders-Icon", kp = 1, text = PROFESSIONS_CRAFTING_ORDERS_PAGE_NAME:format(
             PROFESSIONS_CRAFTER_ORDER_TAB_NPC) })
-            :AddRequirement(MKPT_KpItemRequirement:New(MKPT_Item.FindByQuestId(93695)))
-            :AddRequirement(MKPT_KpItemRequirement:New(MKPT_Item.FindByQuestId(93540)))
-            :AddRequirement(MKPT_KpItemRequirement:New(MKPT_Item.FindByQuestId(93541)))
           )
       ,
       -- 3202       Midnight Mining
@@ -1298,9 +1280,6 @@ MKPT_env.InitProfessions = function()
           :AddEntry(MKPT_PatronCatchUp:New({ questId = {}, itemId = 246334, atlasIcon =
             "Professions-Crafting-Orders-Icon", kp = 1, text = PROFESSIONS_CRAFTING_ORDERS_PAGE_NAME:format(
             PROFESSIONS_CRAFTER_ORDER_TAB_NPC) })
-            :AddRequirement(MKPT_KpItemRequirement:New(MKPT_Item.FindByQuestId(93696)))
-            :AddRequirement(MKPT_KpItemRequirement:New(MKPT_Item.FindByQuestId(93542)))
-            :AddRequirement(MKPT_KpItemRequirement:New(MKPT_Item.FindByQuestId(93543)))
           )
 
     }
