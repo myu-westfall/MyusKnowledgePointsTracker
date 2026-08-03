@@ -115,7 +115,8 @@ end
 ---@return number
 function MKPT_Profession:GetCatchUpCurrencyLeft()
   local currencyInfo = C_CurrencyInfo.GetCurrencyInfo(self.catchUpCurrencyId)
-  return currencyInfo.maxQuantity - currencyInfo.quantity
+  local quantity = currencyInfo.useTotalEarnedForMaxQty and currencyInfo.totalEarned or currencyInfo.quantity
+  return currencyInfo.maxQuantity - quantity
 end
 
 ---Verify if the player has trained this profession based on it's spellId
