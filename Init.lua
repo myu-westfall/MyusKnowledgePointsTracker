@@ -761,6 +761,11 @@ MKPT_env.InitProfessions = function()
             :AddRequirement(MKPT_RenownRequirement:New(2699, 9))
             :AddRequirement(MKPT_CurrencyRequirement:New(3256, 75))
             :AddRequirement(MKPT_CurrencyRequirement:New(3316, 750)))
+          --Demystifyin': Alchemy
+          :AddEntry(MKPT_UniqueBook:New({ questId = { 96459 }, itemId = 274500, waypoint = { map = 2512, x = 0.586, y = 0.460 }, kp = 10, spell = 1294335 })
+            :AddRequirement(MKPT_RenownRequirement:New(2772, 6))
+            :AddRequirement(MKPT_CurrencyRequirement:New(3256, 75))
+            :AddRequirement(MKPT_CurrencyRequirement:New(3316, 750)))
           --Thalassian Treatise on Alchemy
           :AddEntry(MKPT_Treatise:New({ questId = { 95127 }, itemId = 245755, waypoint = { map = 2393, x = 0.4502, y = 0.5560 }, kp = 1, spell = 1282284 })
             :AddRequirement(MKPT_ItemRequirement:New(245755, 1)))
@@ -801,6 +806,11 @@ MKPT_env.InitProfessions = function()
           :AddEntry(MKPT_UniqueBook:New({ questId = { 93795 }, itemId = 262644, waypoint = { map = 2405, x = 0.5258, y = 0.7290 }, kp = 10, spell = 1269211 })
             :AddRequirement(MKPT_RenownRequirement:New(2699, 9))
             :AddRequirement(MKPT_CurrencyRequirement:New(3257, 75))
+            :AddRequirement(MKPT_CurrencyRequirement:New(3316, 750)))
+          --Demystifyin': Blacksmithing
+          :AddEntry(MKPT_UniqueBook:New({ questId = { 96511 }, itemId = 274515, waypoint = { map = 2512, x = 0.586, y = 0.460 }, kp = 10, spell = 1309202 })
+            :AddRequirement(MKPT_RenownRequirement:New(2772, 6))
+            :AddRequirement(MKPT_CurrencyRequirement:New(3256, 75))
             :AddRequirement(MKPT_CurrencyRequirement:New(3316, 750)))
           -- Thalassian Treatise on Blacksmithing
           :AddEntry(MKPT_Treatise:New({ questId = { 95128 }, itemId = 245763, waypoint = { map = 2393, x = 0.4502, y = 0.5560 }, kp = 1, spell = 1282300, atlasIcon =
@@ -847,6 +857,11 @@ MKPT_env.InitProfessions = function()
           :AddEntry(MKPT_UniqueBook:New({ questId = { 92186 }, itemId = 250445, waypoint = { map = 2437, x = 0.3156, y = 0.2626 }, kp = 10, spell = 1251168 })
             :AddRequirement(MKPT_CurrencyRequirement:New(3377, 1600))
             :AddRequirement(MKPT_CurrencyRequirement:New(3258, 75)))
+          --Demystifyin': Enchanting
+          :AddEntry(MKPT_UniqueBook:New({ questId = { 96512 }, itemId = 274511, waypoint = { map = 2512, x = 0.586, y = 0.460 }, kp = 10, spell = 1294806 })
+            :AddRequirement(MKPT_RenownRequirement:New(2772, 6))
+            :AddRequirement(MKPT_CurrencyRequirement:New(3256, 75))
+            :AddRequirement(MKPT_CurrencyRequirement:New(3316, 750)))
           -- Thalassian Treatise on Enchanting
           :AddEntry(MKPT_Treatise:New({ questId = { 95129 }, itemId = 245759, waypoint = { map = 2393, x = 0.4502, y = 0.5560 }, kp = 1, spell = 1282301, atlasIcon =
             "Professions-Crafting-Orders-Icon" })
@@ -895,6 +910,11 @@ MKPT_env.InitProfessions = function()
           :AddEntry(MKPT_UniqueBook:New({ questId = { 93796 }, itemId = 262646, waypoint = { map = 2405, x = 0.5258, y = 0.7290 }, kp = 10, spell = 1269212 })
             :AddRequirement(MKPT_RenownRequirement:New(2699, 9))
             :AddRequirement(MKPT_CurrencyRequirement:New(3259, 75))
+            :AddRequirement(MKPT_CurrencyRequirement:New(3316, 750)))
+          --Demystifyin': Engineering
+          :AddEntry(MKPT_UniqueBook:New({ questId = { 96513 }, itemId = 274516, waypoint = { map = 2512, x = 0.586, y = 0.460 }, kp = 10, spell = 1294808 })
+            :AddRequirement(MKPT_RenownRequirement:New(2772, 6))
+            :AddRequirement(MKPT_CurrencyRequirement:New(3256, 75))
             :AddRequirement(MKPT_CurrencyRequirement:New(3316, 750)))
           -- Thalassian Treatise on Engineering
           :AddEntry(MKPT_Treatise:New({ questId = { 95138 }, itemId = 245809, waypoint = { map = 2393, x = 0.4502, y = 0.5560 }, kp = 1, spell = 1282302, atlasIcon =
@@ -975,6 +995,11 @@ MKPT_env.InitProfessions = function()
           :AddEntry(MKPT_UniqueBook:New({ questId = { 92174 }, itemId = 250443, waypoint = { map = 2437, x = 0.3156, y = 0.2626 }, kp = 10, spell = 1251165 })
             :AddRequirement(MKPT_CurrencyRequirement:New(3377, 1600))
             :AddRequirement(MKPT_CurrencyRequirement:New(3260, 75)))
+          --Demystifyin': Herbalism
+          :AddEntry(MKPT_UniqueBook:New({ questId = { 96514 }, itemId = 274513, waypoint = { map = 2512, x = 0.586, y = 0.460 }, kp = 10, spell = 1294809 })
+            :AddRequirement(MKPT_RenownRequirement:New(2772, 6))
+            :AddRequirement(MKPT_CurrencyRequirement:New(3256, 75))
+            :AddRequirement(MKPT_CurrencyRequirement:New(3316, 750)))
           -- Thalassian Treatise on Herbalism
           :AddEntry(MKPT_Treatise:New({ questId = { 95130 }, itemId = 245761, waypoint = { map = 2393, x = 0.4502, y = 0.5560 }, kp = 1, spell = 1282303, atlasIcon =
             "Professions-Crafting-Orders-Icon" })
@@ -1016,6 +1041,11 @@ MKPT_env.InitProfessions = function()
           :AddEntry(MKPT_UniqueBook:New({ questId = { 93412 }, itemId = 258411, waypoint = { map = 2413, x = 0.510, y = 0.508 }, kp = 10, spell = 1263265 })
             :AddRequirement(MKPT_RenownRequirement:New(2704, 6))
             :AddRequirement(MKPT_CurrencyRequirement:New(3261, 75))
+            :AddRequirement(MKPT_CurrencyRequirement:New(3316, 750)))
+          --Demystifyin': Inscription
+          :AddEntry(MKPT_UniqueBook:New({ questId = { 96515 }, itemId = 274514, waypoint = { map = 2512, x = 0.586, y = 0.460 }, kp = 10, spell = 1294810 })
+            :AddRequirement(MKPT_RenownRequirement:New(2772, 6))
+            :AddRequirement(MKPT_CurrencyRequirement:New(3256, 75))
             :AddRequirement(MKPT_CurrencyRequirement:New(3316, 750)))
           -- Thalassian Treatise on Inscription
           :AddEntry(MKPT_Treatise:New({ questId = { 95131 }, itemId = 245757, waypoint = { map = 2393, x = 0.4502, y = 0.5560 }, kp = 1, spell = 1282304, atlasIcon =
@@ -1059,6 +1089,11 @@ MKPT_env.InitProfessions = function()
             :AddRequirement(MKPT_RenownRequirement:New(2710, 6))
             :AddRequirement(MKPT_CurrencyRequirement:New(3262, 75))
             :AddRequirement(MKPT_CurrencyRequirement:New(3316, 750)))
+          --Demystifyin': Jewelcrafting
+          :AddEntry(MKPT_UniqueBook:New({ questId = { 96516 }, itemId = 274510, waypoint = { map = 2512, x = 0.586, y = 0.460 }, kp = 10, spell = 1294812 })
+            :AddRequirement(MKPT_RenownRequirement:New(2772, 6))
+            :AddRequirement(MKPT_CurrencyRequirement:New(3256, 75))
+            :AddRequirement(MKPT_CurrencyRequirement:New(3316, 750)))
           -- Thalassian Treatise on Jewelcrafting
           :AddEntry(MKPT_Treatise:New({ questId = { 95133 }, itemId = 245760, waypoint = { map = 2393, x = 0.4502, y = 0.5560 }, kp = 1, spell = 1282305, atlasIcon =
             "Professions-Crafting-Orders-Icon" })
@@ -1099,6 +1134,11 @@ MKPT_env.InitProfessions = function()
           :AddEntry(MKPT_UniqueBook:New({ questId = { 92371 }, itemId = 250922, waypoint = { map = 2437, x = 0.458, y = 0.658 }, kp = 10, spell = 1251672 })
             :AddRequirement(MKPT_RenownRequirement:New(2696, 6))
             :AddRequirement(MKPT_CurrencyRequirement:New(3263, 75))
+            :AddRequirement(MKPT_CurrencyRequirement:New(3316, 750)))
+          --Demystifyin': Leatherworking
+          :AddEntry(MKPT_UniqueBook:New({ questId = { 96517 }, itemId = 274507, waypoint = { map = 2512, x = 0.586, y = 0.460 }, kp = 10, spell = 1294813 })
+            :AddRequirement(MKPT_RenownRequirement:New(2772, 6))
+            :AddRequirement(MKPT_CurrencyRequirement:New(3256, 75))
             :AddRequirement(MKPT_CurrencyRequirement:New(3316, 750)))
           -- Thalassian Treatise on Leatherworking
           :AddEntry(MKPT_Treatise:New({ questId = { 95134 }, itemId = 245758, waypoint = { map = 2393, x = 0.4502, y = 0.5560 }, kp = 1, spell = 1282306, atlasIcon =
@@ -1173,6 +1213,11 @@ MKPT_env.InitProfessions = function()
           :AddEntry(MKPT_UniqueBook:New({ questId = { 92187 }, itemId = 250444, waypoint = { map = 2437, x = 0.3156, y = 0.2626 }, kp = 10, spell = 1251166 })
             :AddRequirement(MKPT_CurrencyRequirement:New(3377, 1600))
             :AddRequirement(MKPT_CurrencyRequirement:New(3264, 75)))
+          --Demystifyin': Mining
+          :AddEntry(MKPT_UniqueBook:New({ questId = { 96518 }, itemId = 274509, waypoint = { map = 2512, x = 0.586, y = 0.460 }, kp = 10, spell = 1309200 })
+            :AddRequirement(MKPT_RenownRequirement:New(2772, 6))
+            :AddRequirement(MKPT_CurrencyRequirement:New(3256, 75))
+            :AddRequirement(MKPT_CurrencyRequirement:New(3316, 750)))
           -- Thalassian Treatise on Mining
           :AddEntry(MKPT_Treatise:New({ questId = { 95135 }, itemId = 245762, waypoint = { map = 2393, x = 0.4502, y = 0.5560 }, kp = 1, spell = 1282307, atlasIcon =
             "Professions-Crafting-Orders-Icon" })
@@ -1219,6 +1264,11 @@ MKPT_env.InitProfessions = function()
           :AddEntry(MKPT_UniqueBook:New({ questId = { 92188 }, itemId = 250360, waypoint = { map = 2437, x = 0.3156, y = 0.2626 }, kp = 10, spell = 1250888 })
             :AddRequirement(MKPT_CurrencyRequirement:New(3377, 1600))
             :AddRequirement(MKPT_CurrencyRequirement:New(3265, 75)))
+          --Demystifyin': Skinning
+          :AddEntry(MKPT_UniqueBook:New({ questId = { 96519 }, itemId = 274508, waypoint = { map = 2512, x = 0.586, y = 0.460 }, kp = 10, spell = 1294818 })
+            :AddRequirement(MKPT_RenownRequirement:New(2772, 6))
+            :AddRequirement(MKPT_CurrencyRequirement:New(3256, 75))
+            :AddRequirement(MKPT_CurrencyRequirement:New(3316, 750)))
           -- Thalassian Treatise on Skinning
           :AddEntry(MKPT_Treatise:New({ questId = { 95136 }, itemId = 245828, waypoint = { map = 2393, x = 0.4502, y = 0.5560 }, kp = 1, spell = 1282308, atlasIcon =
             "Professions-Crafting-Orders-Icon" })
@@ -1260,6 +1310,11 @@ MKPT_env.InitProfessions = function()
           :AddEntry(MKPT_UniqueBook:New({ questId = { 93201 }, itemId = 257601, waypoint = { map = 2395, x = 0.434, y = 0.474 }, kp = 10, spell = 1261784 })
             :AddRequirement(MKPT_RenownRequirement:New(2710, 6))
             :AddRequirement(MKPT_CurrencyRequirement:New(3266, 75))
+            :AddRequirement(MKPT_CurrencyRequirement:New(3316, 750)))
+          --Demystifyin': Tailoring
+          :AddEntry(MKPT_UniqueBook:New({ questId = { 96520 }, itemId = 274512, waypoint = { map = 2512, x = 0.586, y = 0.460 }, kp = 10, spell = 1294819 })
+            :AddRequirement(MKPT_RenownRequirement:New(2772, 6))
+            :AddRequirement(MKPT_CurrencyRequirement:New(3256, 75))
             :AddRequirement(MKPT_CurrencyRequirement:New(3316, 750)))
           -- Thalassian Treatise on Tailoring
           :AddEntry(MKPT_Treatise:New({ questId = { 95137 }, itemId = 245756, waypoint = { map = 2393, x = 0.4502, y = 0.5560 }, kp = 1, spell = 1282309, atlasIcon =
