@@ -11,7 +11,7 @@
 ## Author: Myu
 ## Dependencies: Blizzard_Professions
 ## SavedVariables: MKPT_Config
-## Version: 0.8.10
+## Version: 0.8.11
 ## X-Curse-Project-ID: 1457220
 ## X-Wago-ID: nGv78DNx
 ## IconTexture: Interface\AddOns\MyusKnowledgePointsTracker\Textures\MKPT_Icon
