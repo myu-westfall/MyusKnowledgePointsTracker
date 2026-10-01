@@ -88,7 +88,8 @@
         "LOOT_ITEM_PUSHED_SELF",
         "LOOT_ITEM_PUSHED_MULTIPLE",
         "LOOT_ITEM_PUSHED",
-        "includes"
+        "includes",
+        "Professions"
     ],
     "Lua.type.weakUnionCheck": true
 }

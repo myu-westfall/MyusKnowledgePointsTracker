@@ -23,7 +23,7 @@ local L = MKPT_env.L
 local db = {}
 
 MKPT_env.GetProfessions = function()
-  local expansion = MKPT_env.charDb.state.expansion or Enum.ExpansionLevel.WarWithin
+  local expansion = MKPT_env.charDb.state.expansion or Enum.ExpansionLevel.Midnight
 
   local professions = {}
   for _, profession in pairs(db[expansion]) do
