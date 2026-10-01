@@ -125,3 +125,10 @@ L["Looted through mining, after 5 Slabs of Slate"] = "Добывается пр�
 L["Looted through mining, after 5 Igneous Rock Specimen"] = "Добывается при горном деле, после 5 Образов вулканического камня"
 L["Looted through skinning, after 5 pelts"] = "Добывается при снятии шкур, после 5 шкур"
 L["Looted through skinning, after 5 hides"] = "Добывается при снятии шкур, после 5 цельных шкур"
+
+-- LLM translated section below. If you read this and find anything anormal or have suggestions please report it at https://www.curseforge.com/wow/addons/myus-knowledge-points-tracker or open an issue at https://github.com/myu-westfall/MyusKnowledgePointsTracker/issues.
+-- MKPT_RightClickMenu.lua
+L["Filled Tree"] = "Дерево заполнено"
+
+-- MKPT_UI.lua
+L["Professions are complete!"] = "Профессии полностью изучены!"
