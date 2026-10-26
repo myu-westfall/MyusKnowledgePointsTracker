@@ -89,7 +89,9 @@
         "LOOT_ITEM_PUSHED_MULTIPLE",
         "LOOT_ITEM_PUSHED",
         "includes",
-        "Professions"
+        "Professions",
+        "DF_LOCALIZED_NAME",
+        "EXPANSION_NAME9"
     ],
     "Lua.type.weakUnionCheck": true
 }
