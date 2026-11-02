@@ -285,3 +285,42 @@ function MKPT_KpItemRequirement:GetDescription()
 
   return self.kpItem:GetCategoryIcon().." "..(self.kpItem:GetFormattedName() or "???").." "..icon
 end
+
+---@class MKPT_ProfessionSkillRequirement : MKPT_Requirement
+---@field skillLineId number - Skill line id of the required profession
+---@field requiredSkill number - Required skill level of the profession
+local MKPT_ProfessionSkillRequirement = MKPT_Requirement:New()
+MKPT_env.MKPT_ProfessionSkillRequirement = MKPT_ProfessionSkillRequirement
+
+---@param skillLineId number - Skill line id of the required profession
+---@param requiredSkill number - Required skill level of the profession
+function MKPT_ProfessionSkillRequirement:New(skillLineId, requiredSkill)
+  local o = MKPT_Requirement.New()
+  setmetatable(o, self)
+  self.__index = self
+
+  o.skillLineId = skillLineId
+  o.requiredSkill = requiredSkill
+
+  return o
+end
+
+---@return boolean - true if the profession is trained and the skill is reached
+function MKPT_ProfessionSkillRequirement:MeetsRequirement()
+  local info = C_TradeSkillUI.GetProfessionInfoBySkillLineID(self.skillLineId)
+  if info and info.skillLevel >= self.requiredSkill then
+    return true
+  end
+  return false
+end
+
+---Gets the profession name with skill level, followed of a green/red checkmark if it meets the skill requirement
+---@return string
+function MKPT_ProfessionSkillRequirement:GetDescription()
+  local info = C_TradeSkillUI.GetProfessionInfoBySkillLineID(self.skillLineId)
+  local meetsRequirement = self:MeetsRequirement()
+  local icon = meetsRequirement and CreateAtlasMarkup("groupfinder-icon-greencheckmark", 12, 12) or ""
+  local formattedSkillLevel = meetsRequirement and Utils.CatchUpTextColor(info.skillLevel) or Utils.RequirementsNotMetColor(info.skillLevel)
+
+  return info.professionName .. " " .. formattedSkillLevel .. "/" .. self.requiredSkill .. icon
+end

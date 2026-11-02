@@ -18,6 +18,7 @@ local MKPT_ItemRequirement = MKPT_env.MKPT_ItemRequirement
 local MKPT_FirstTimeRecipe = MKPT_env.MKPT_FirstTimeRecipe
 local MKPT_KpItemRequirement = MKPT_env.MKPT_KpItemRequirement
 local MKPT_Currency = MKPT_env.MKPT_Currency
+local MKPT_ProfessionSkillRequirement = MKPT_env.MKPT_ProfessionSkillRequirement
 
 local L = MKPT_env.L
 
@@ -75,9 +76,11 @@ MKPT_env.InitProfessions = function()
           :AddEntry(MKPT_Treatise:New({ questId = { 74108 }, itemId = 194697, waypoint = { map = 2112, x = 0.34759241342545, y = 0.61595261096954 }, kp = 1, spell = 377674, atlasIcon = "Professions-Crafting-Orders-Icon" })
             :AddRequirement(MKPT_ItemRequirement:New(194697, 1)))
           -- Experimental Substance, Treasure Hunt
-          :AddEntry(MKPT_WeeklyTreasure:New { questId = { 66373 }, itemId = 193891, kp = 1 })
+          :AddEntry(MKPT_WeeklyTreasure:New ({ questId = { 66373 }, itemId = 193891, kp = 1 })
+            :AddRequirement(MKPT_ProfessionSkillRequirement:New(2823, 25)))
           -- Reawakened Catalyst, Treasure Hunt
-          :AddEntry(MKPT_WeeklyTreasure:New { questId = { 66374 }, itemId = 193897, kp = 1 })
+          :AddEntry(MKPT_WeeklyTreasure:New ({ questId = { 66374 }, itemId = 193897, kp = 1 })
+            :AddRequirement(MKPT_ProfessionSkillRequirement:New(2823, 25)))
       ,
 
       -- Blacksmithing
@@ -98,9 +101,11 @@ MKPT_env.InitProfessions = function()
           :AddEntry(MKPT_Treatise:New({ questId = { 74109 }, itemId = 198454, waypoint = { map = 2112, x = 0.34759241342545, y = 0.61595261096954 }, kp = 1, spell = 377674, atlasIcon = "Professions-Crafting-Orders-Icon" })
             :AddRequirement(MKPT_ItemRequirement:New(198454, 1)))
           -- Valdrakken Weapon Chain, Treasure Hunt
-          :AddEntry(MKPT_WeeklyTreasure:New { questId = { 66381 }, itemId = 192131, kp = 1 })
+          :AddEntry(MKPT_WeeklyTreasure:New ({ questId = { 66381 }, itemId = 192131, kp = 1 })
+            :AddRequirement(MKPT_ProfessionSkillRequirement:New(2822, 25)))
           -- Draconium Blade Sharpener, Treasure Hunt
-          :AddEntry(MKPT_WeeklyTreasure:New { questId = { 66382 }, itemId = 192132, kp = 1 })
+          :AddEntry(MKPT_WeeklyTreasure:New ({ questId = { 66382 }, itemId = 192132, kp = 1 })
+            :AddRequirement(MKPT_ProfessionSkillRequirement:New(2822, 25)))
       ,
 
       -- Enchanting
@@ -121,9 +126,11 @@ MKPT_env.InitProfessions = function()
           :AddEntry(MKPT_Treatise:New({ questId = { 74110 }, itemId = 194702, waypoint = { map = 2112, x = 0.34759241342545, y = 0.61595261096954 }, kp = 1, spell = 377686, atlasIcon = "Professions-Crafting-Orders-Icon" })
             :AddRequirement(MKPT_ItemRequirement:New(194702, 1)))
           -- Prismatic Focusing Shard, Treasure Hunt
-          :AddEntry(MKPT_WeeklyTreasure:New { questId = { 66377 }, itemId = 193900, kp = 1 })
+          :AddEntry(MKPT_WeeklyTreasure:New ({ questId = { 66377 }, itemId = 193900, kp = 1 })
+            :AddRequirement(MKPT_ProfessionSkillRequirement:New(2825, 25)))
           -- Primal Dust, Treasure Hunt
-          :AddEntry(MKPT_WeeklyTreasure:New { questId = { 66378 }, itemId = 193901, kp = 1 })
+          :AddEntry(MKPT_WeeklyTreasure:New ({ questId = { 66378 }, itemId = 193901, kp = 1 })
+            :AddRequirement(MKPT_ProfessionSkillRequirement:New(2825, 25)))
       ,
 
       -- Engineering
@@ -144,9 +151,11 @@ MKPT_env.InitProfessions = function()
           :AddEntry(MKPT_Treatise:New({ questId = { 74111 }, itemId = 198510, waypoint = { map = 2112, x = 0.34759241342545, y = 0.61595261096954 }, kp = 1, spell = 377685, atlasIcon = "Professions-Crafting-Orders-Icon" })
             :AddRequirement(MKPT_ItemRequirement:New(198510, 1)))
           -- Eroded Titan Gizmo, Treasure Hunt
-          :AddEntry(MKPT_WeeklyTreasure:New { questId = { 66379 }, itemId = 193902, kp = 1 })
+          :AddEntry(MKPT_WeeklyTreasure:New ({ questId = { 66379 }, itemId = 193902, kp = 1 })
+            :AddRequirement(MKPT_ProfessionSkillRequirement:New(2827, 25)))
           -- Watcher Power Core, Treasure Hunt
-          :AddEntry(MKPT_WeeklyTreasure:New { questId = { 66380 }, itemId = 193903, kp = 1 })
+          :AddEntry(MKPT_WeeklyTreasure:New ({ questId = { 66380 }, itemId = 193903, kp = 1 })
+            :AddRequirement(MKPT_ProfessionSkillRequirement:New(2827, 25)))
       ,
 
       -- Herbalism
@@ -190,9 +199,11 @@ MKPT_env.InitProfessions = function()
           :AddEntry(MKPT_Treatise:New({ questId = { 74105 }, itemId = 194699, waypoint = { map = 2112, x = 0.34759241342545, y = 0.61595261096954 }, kp = 1, spell = 377675, atlasIcon = "Professions-Crafting-Orders-Icon" })
             :AddRequirement(MKPT_ItemRequirement:New(194699, 1)))
           -- Phoenix Feather Quill, Treasure Hunt
-          :AddEntry(MKPT_WeeklyTreasure:New { questId = { 66375 }, itemId = 193904, kp = 1 })
+          :AddEntry(MKPT_WeeklyTreasure:New ({ questId = { 66375 }, itemId = 193904, kp = 1 })
+            :AddRequirement(MKPT_ProfessionSkillRequirement:New(2828, 25)))
           -- Iskaaran Trading Ledger, Treasure Hunt
-          :AddEntry(MKPT_WeeklyTreasure:New { questId = { 66376 }, itemId = 193905, kp = 1 })
+          :AddEntry(MKPT_WeeklyTreasure:New ({ questId = { 66376 }, itemId = 193905, kp = 1 })
+            :AddRequirement(MKPT_ProfessionSkillRequirement:New(2828, 25)))
       ,
 
       -- Jewelcrafting
@@ -213,9 +224,11 @@ MKPT_env.InitProfessions = function()
           :AddEntry(MKPT_Treatise:New({ questId = { 74112 }, itemId = 194703, waypoint = { map = 2112, x = 0.34759241342545, y = 0.61595261096954 }, kp = 1, spell = 377688, atlasIcon = "Professions-Crafting-Orders-Icon" })
             :AddRequirement(MKPT_ItemRequirement:New(194703, 1)))
           -- Chipped Tyrstone
-          :AddEntry(MKPT_WeeklyTreasure:New { questId = { 66388 }, itemId = 193907, kp = 1 })
+          :AddEntry(MKPT_WeeklyTreasure:New (({ questId = { 66388 }, itemId = 193907, kp = 1 }))
+            :AddRequirement(MKPT_ProfessionSkillRequirement:New(2829, 25)))
           -- Ancient Gem Fragments
-          :AddEntry(MKPT_WeeklyTreasure:New { questId = { 66389 }, itemId = 193909, kp = 1 })
+          :AddEntry(MKPT_WeeklyTreasure:New (({ questId = { 66389 }, itemId = 193909, kp = 1 }))
+            :AddRequirement(MKPT_ProfessionSkillRequirement:New(2829, 25)))
       ,
 
       -- Leatherworking
@@ -236,9 +249,11 @@ MKPT_env.InitProfessions = function()
           :AddEntry(MKPT_Treatise:New({ questId = { 74113 }, itemId = 194700, waypoint = { map = 2112, x = 0.34759241342545, y = 0.61595261096954 }, kp = 1, spell = 377678, atlasIcon = "Professions-Crafting-Orders-Icon" })
             :AddRequirement(MKPT_ItemRequirement:New(194700, 1)))
           -- Molted Dragon Scales
-          :AddEntry(MKPT_WeeklyTreasure:New { questId = { 66384 }, itemId = 193910, kp = 1 })
+          :AddEntry(MKPT_WeeklyTreasure:New ({ questId = { 66384 }, itemId = 193910, kp = 1 })
+            :AddRequirement(MKPT_ProfessionSkillRequirement:New(2830, 25)))
           -- Ossified Hide
-          :AddEntry(MKPT_WeeklyTreasure:New { questId = { 66385 }, itemId = 198975, kp = 1 })
+          :AddEntry(MKPT_WeeklyTreasure:New ({ questId = { 66385 }, itemId = 198975, kp = 1 })
+            :AddRequirement(MKPT_ProfessionSkillRequirement:New(2830, 25)))
       ,
 
       -- Mining
@@ -305,9 +320,11 @@ MKPT_env.InitProfessions = function()
           :AddEntry(MKPT_Treatise:New({ questId = { 74115 }, itemId = 194698, waypoint = { map = 2112, x = 0.34759241342545, y = 0.61595261096954 }, kp = 1, spell = 377677, atlasIcon = "Professions-Crafting-Orders-Icon" })
             :AddRequirement(MKPT_ItemRequirement:New(194698, 1)))
           -- Umbral Bone Needle
-          :AddEntry(MKPT_WeeklyTreasure:New { questId = { 66386 }, itemId = 193898, kp = 1 })
+          :AddEntry(MKPT_WeeklyTreasure:New ({ questId = { 66386 }, itemId = 193898, kp = 1 })
+            :AddRequirement(MKPT_ProfessionSkillRequirement:New(2831, 25)))
           -- Primalweave Spindle
-          :AddEntry(MKPT_WeeklyTreasure:New { questId = { 66387 }, itemId = 193899, kp = 1 })
+          :AddEntry(MKPT_WeeklyTreasure:New ({ questId = { 66387 }, itemId = 193899, kp = 1 })
+            :AddRequirement(MKPT_ProfessionSkillRequirement:New(2831, 25)))
     },
     
     -- TWW

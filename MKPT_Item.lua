@@ -372,6 +372,15 @@ function MKPT_WeeklyTreasure:GetDescription()
   if self.text then
     return self.text
   end
+
+  local requirementsText = self.text and self.text.."\n\n" or ""
+  if self.requirements then
+    for _, v in ipairs(self.requirements) do
+      requirementsText = requirementsText..v:GetDescription().."\n"
+    end
+    requirementsText = requirementsText.."\n"
+  end
+
   local zoneName
   local selectedExpansion = MKPT_env.charDb.state.expansion
   if selectedExpansion == Enum.ExpansionLevel.WarWithin then
@@ -381,7 +390,7 @@ function MKPT_WeeklyTreasure:GetDescription()
   else
     zoneName = C_Map.GetMapInfo(1978).name -- Dragon Isles
   end
-  return Utils.WEEKLY_TREASURE_ICON .. " " .. string.format(L["Found on treasures around %s"], zoneName)
+  return requirementsText .. Utils.WEEKLY_TREASURE_ICON .. " " .. string.format(L["Found on treasures around %s"], zoneName)
 end
 
 local MKPT_WeeklyQuestItem = MKPT_Item:New()
